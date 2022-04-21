@@ -1,3 +1,19 @@
 /** @format */
 
 @use 'custom';
+
+//Import components files
+@use './components/typograpy';
+@use './components/mixins';
+@use './components/buttons';
+@use './components/animations';
+
+//Import section files
+@use './sections/navbar';
+@use './sections/intro';
+@use './sections/skills';
+@use './sections/portfolio';
+@use './sections/education';
+@use './sections/language';
+@use './sections/contact';
+@use './sections/footer';
