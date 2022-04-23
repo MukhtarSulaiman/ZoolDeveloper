@@ -1,3 +1,27 @@
-// Import bootstarp 5
+//My theme colors
+$dark-tomato: #FF6F61;
+$light-tomato:   #ffb9b3;
+$hot-pink:  #BE2E73;
+$dark-green: #1A2421;
 
-// @import "../node_modules/bootstrap/scss/bootstrap"; 
+
+// White, gray and black colors
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+// Main colors
+$primary: $dark-tomato;
+$secondary: $hot-pink;
+$dark: $dark-green;
+
+// Import bootstarp 5
+@import "../node_modules/bootstrap/scss/bootstrap"; 
