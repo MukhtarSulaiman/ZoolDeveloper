@@ -6,7 +6,7 @@
     
     .nav-item {
         font-size: 1.3rem;
-        padding: 0 0.5rem;
+        padding: 0 0.2rem;
     }
     .nav-item-border {
         position: relative;
@@ -16,13 +16,15 @@
             height: 2px;
             position: absolute;
             bottom: 7px;
-            left: 18px;
+            left: 12px;
             @include gradient;
         }
     }
     .nav-link-lang {
         @include gradient;
         position: relative;
+        width: 45px;
+        text-align: center;
         &::after {
             content: '';
             width: 3px;
@@ -30,6 +32,37 @@
             position: absolute;
             left: -15px;
             background-color: $white;
+        }
+        
+    }
+    @include media-breakpoint-down(lg) {
+        .navbar-nav {
+            position: relative;
+            .nav-item-border {
+                &::after {
+                    width: 50%;
+                }
+            }
+            .fa-moon {
+                font-size: 1.8rem;
+            }
+            .nav-item-mode-switch, .nav-item-lang {
+                position: absolute;
+            }
+            .nav-item-mode-switch {
+               
+                bottom: 50px;
+                right: -15px;
+            }
+            .nav-item-lang {
+                bottom: 3px;
+                right: 0;
+            } 
+            .nav-link-lang {
+                &::after {
+                    content: none;
+                }
+            }
         }
     }
 }
