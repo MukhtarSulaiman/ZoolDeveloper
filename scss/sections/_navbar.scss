@@ -1,4 +1,5 @@
 @use '../custom' as *;
+@use '../components/mixins' as *;
 
 // Navbar section
 .navbar {
@@ -16,11 +17,11 @@
             position: absolute;
             bottom: 7px;
             left: 18px;
-            background-image: linear-gradient(to right, $primary, $secondary);
+            @include gradient;
         }
     }
     .nav-link-lang {
-        background-image: linear-gradient(to right, $primary, $secondary);
+        @include gradient;
         position: relative;
         &::after {
             content: '';
