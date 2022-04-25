@@ -1,0 +1,11 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+@mixin custom-btn($width: 160px){
+    width: $width;
+    height: 50px;
+    border-radius: 15px;
+    color: $white;
+    @include gradient;
+}
