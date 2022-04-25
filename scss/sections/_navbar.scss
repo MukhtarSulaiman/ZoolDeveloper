@@ -10,6 +10,11 @@
     }
     .nav-item-border {
         position: relative;
+        &:hover {
+            &::after {
+                transform: scaleX(1);
+            }
+        }
         &::after {
             content: '';
             width: 60%;
@@ -18,6 +23,9 @@
             bottom: 7px;
             left: 12px;
             @include gradient;
+            transform-origin: 0% 50%;
+            transform: scaleX(0);
+            transition: transform 350ms linear;
         }
     }
     .nav-link-lang {
