@@ -1,0 +1,13 @@
+@use '../custom' as *;
+
+    // A customizable animation
+    @mixin animation($duration, $delay: 0s) {
+        $name: #{unique-id()};
+        @keyframes #{$name} {
+            @content;
+        }
+        animation-name: $name;
+        animation-duration: $duration;
+        animation-fill-mode: forwards;
+        animation-delay: $delay;
+    }
