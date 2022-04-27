@@ -1,6 +1,7 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 @use '../components/buttons' as *;
+@use '../components/animations' as *;
 
 
 .intro-section {
@@ -29,17 +30,70 @@
         &::after {
             bottom: -30px;
         }
+        i:hover {
+            transform: scale(1.5);
+            transition: transform 300ms linear;
+        }
+    }
+
+    &__network {
+        opacity: 0;
+        @include animation(3s, 3s) {
+            0% {opacity: 0; transform: translateX(-150px);}
+            20% {opacity: 0.5;}
+            100% {opacity: 1; transform: translateY(0px);} 
+        }
+    }
+
+    &__greeting {
+        opacity: 0;
+        @include animation(3s) {
+            0% {opacity: 0; transform: translateY(-150px);}
+            20% {opacity: 0.5;}
+            100% {opacity: 1; transform: translateY(0px);} 
+        }
+    }
+
+    &__main-heading {
+        @include animation(2s) {
+            0% {opacity: 0; transform: translateX(-150px);}
+            20% {opacity: 0.5;}
+            100% {opacity: 1; transform: translateY(0px);} 
+        }
+    }
+
+    &__description {
+        @include animation(2s) {
+            0% {opacity: 0; transform: translateX(150px);}
+            20% {opacity: 0.5;}
+            100% {opacity: 1; transform: translateY(0px);} 
+        }
     }
 
     &__custom-btn {
-        @include custom-btn;
         border: none;
+        opacity: 0;
+        @include custom-btn;
+        @include animation(3s, 3s) {
+            0% {opacity: 0; transform: translateY(150px);}
+            20% {opacity: 0.5;}
+            100% {opacity: 1; transform: translateY(0px);} 
+        }
         
         i {
             border: 1px solid $white;
             border-radius: 50%;
         }
     }
+
+    &__img {
+        transform: scale(0);
+            @include animation(2s, 1.5s) {
+                0% {opacity: 0; transform: scale(0.5);}
+                10% {opacity: 0;}
+                100% {opacity: 1; transform: scale(1);} 
+            }
+        }
 
     @include media-breakpoint-down(xl) {
         &__custom-btn {
