@@ -1,0 +1,76 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+@use '../components/buttons' as *;
+
+
+.intro-section {
+    margin-top: 100px;
+    &__intros {
+        padding-left: 150px;
+    }
+
+    &__network {
+        padding-left: 30px;
+        left: 0;
+
+        &::before, &::after {
+            content: '';
+            width: 2px;
+            height: 150px;
+            position: absolute;
+            left: 36px;
+            @include gradient;
+        }
+
+        &::before {
+            top: -30px;
+        }
+
+        &::after {
+            bottom: -30px;
+        }
+    }
+
+    &__custom-btn {
+        @include custom-btn;
+        border: none;
+        
+        i {
+            border: 1px solid $white;
+            border-radius: 50%;
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        &__custom-btn {
+            position: absolute;
+            bottom: 20px;
+            right: 130px;
+             
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &__intros {
+            padding-left: 20px !important;
+        } 
+
+        &__network {
+            left: 90% !important;
+        }
+        &__custom-btn {
+            position: static;
+        }
+
+        &__description, &__img {
+            width: 80% !important;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        margin: 60px 10px;
+        &__description {
+        width: 100% !important;       
+        }
+    }
+}
