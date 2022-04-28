@@ -1,6 +1,6 @@
 /** @format */
 
-@use 'custom';
+@use 'custom' as *;
 
 //Import components files
 @use './components/typograpy';
@@ -17,3 +17,23 @@
 @use './sections/language';
 @use './sections/contact';
 @use './sections/footer';
+
+:root {
+    --color-page-background: #{$dark};
+    --color-text-icon: #{$white};
+  }
+
+  body {
+    background-color: var(--color-page-background);
+    color: var(--color-text-icon);
+  }
+
+  .white {
+    --color-page-background: #{$white};
+    --color-text-icon: #{$dark};
+  }
+
+  h1, p, a, i,
+  .navbar-toggler-icon{
+    color: var(--color-text-icon) !important;
+}
