@@ -28,18 +28,22 @@
             transition: transform 350ms linear;
         }
     }
+    .fa-moon {
+        display: none;
+    }
     .nav-link-lang {
         @include gradient;
         position: relative;
         width: 45px;
         text-align: center;
+        color: $white !important;
         &::after {
             content: '';
             width: 3px;
             height: 32px;
             position: absolute;
             left: -15px;
-            background-color: $white;
+            background-color: var(--color-text-icon);
         }
         
     }
