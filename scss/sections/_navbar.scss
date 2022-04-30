@@ -28,14 +28,18 @@
             transition: transform 350ms linear;
         }
     }
+    .nav-item-mode-switch {
+        margin-left: 20px;
+    }
     .fa-moon {
         display: none;
     }
-    .nav-link-lang {
+    .btn-lang {
         @include gradient;
         position: relative;
         width: 45px;
         text-align: center;
+        border: none;
         color: $white !important;
         &::after {
             content: '';
@@ -55,14 +59,10 @@
                     width: 50%;
                 }
             }
-            .fa-moon {
-                font-size: 1.8rem;
-            }
             .nav-item-mode-switch, .nav-item-lang {
                 position: absolute;
             }
             .nav-item-mode-switch {
-               
                 bottom: 50px;
                 right: -15px;
             }
@@ -70,7 +70,7 @@
                 bottom: 3px;
                 right: 0;
             } 
-            .nav-link-lang {
+            .btn-lang {
                 &::after {
                     content: none;
                 }
