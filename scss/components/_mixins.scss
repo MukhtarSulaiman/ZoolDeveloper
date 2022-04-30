@@ -1,5 +1,5 @@
 @use '../custom' as *;
 
-@mixin gradient {
-    background-image: linear-gradient(to right, $primary, $secondary);
+@mixin gradient($direction: to right, $opacity: 1) {
+    background-image: linear-gradient($direction, rgb($primary, $opacity), rgb($secondary, $opacity));
 }
