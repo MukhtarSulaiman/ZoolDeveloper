@@ -1,4 +1,5 @@
 @use '../custom' as *;
+@use '../components/animations' as *;
 
 h2 {
     margin-bottom: 2rem;
@@ -6,6 +7,22 @@ h2 {
     text-align: center;
 }
 
-small {
-    display: block;
+.skills-container__content {
+    small {
+        display: block;
+        padding: 7px 0;
+    }
+    &:hover small {    
+        transform: translateY(-15px);
+        transition: transform 500ms;
+    }
+    &:hover::after {
+       
+        background-color: $black;
+        @include animation(400ms) {
+            0% {opacity: 0; bottom: 50px;}
+            40% {opacity: 0.5; bottom: 25px;}
+            100% {opacity: 1; bottom: 10px};
+        } 
+     }
 }

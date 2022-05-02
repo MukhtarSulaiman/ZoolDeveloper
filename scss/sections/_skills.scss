@@ -43,19 +43,32 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        cursor: pointer;
+        position: relative;
+        &::after {
+            content: '';
+            width: 60px;
+            height: 2px;
+            background-color: $white;
+            position: absolute;
+            bottom: 50px;
+        }
         
-        // &:hover {
-        //     @include gradient(to bottom, 0.5);
-        // }
-        // &:hover img {
-        //     width: 55px;
-        //     transition: width 500ms;
-        // }
+        &:hover {
+            background-color: white;
+            color: $black;
+        }
+        &:hover img {
+            width: 47px;
+            transform: translateY(10px);
+            transition: width 500ms, transform 500ms;
+            
+        }
     }
 
     img {
         width: 40px;
-        margin-bottom:30px;
+        margin-bottom: 20px;
     }
     
     @include media-breakpoint-down(sm) {
