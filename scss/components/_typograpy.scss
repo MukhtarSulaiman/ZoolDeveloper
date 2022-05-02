@@ -1,0 +1,11 @@
+@use '../custom' as *;
+
+h2 {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+small {
+    display: block;
+}
