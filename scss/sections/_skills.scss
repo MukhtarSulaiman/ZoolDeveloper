@@ -14,7 +14,7 @@
     object-fit: cover;
     width: inherit;
     height: 95vh;
-    min-height: auto;
+    position: relative;
 
     &__bg-color  {
         width: 45%;
@@ -36,8 +36,7 @@
     }
 
     &__content {
-        margin: 10px;
-        width: 160px;
+        width: 170px;
         height: 120px;
         display: flex;
         justify-content: center;
@@ -62,7 +61,6 @@
             width: 47px;
             transform: translateY(10px);
             transition: width 500ms, transform 500ms;
-            
         }
     }
 
@@ -70,7 +68,11 @@
         width: 40px;
         margin-bottom: 20px;
     }
-    
+    button {
+        @include custom-btn(200px);
+        position: absolute;
+        bottom: 165px;
+    }    
     @include media-breakpoint-down(sm) {
         &__content {
             width: 110px;
@@ -78,7 +80,7 @@
     }
     @include media-breakpoint-down(md) {
         background-image: none;
-
+        height: fit-content !important;
         &__bg-color {
             width: 100%;
             height: fit-content !important;
@@ -88,6 +90,9 @@
             padding: 0 !important;
             margin-top: 30px;
         }
+        button {
+            bottom: -100px !important;
+        }
     }
     @media screen and (max-width: 900px) and (min-width: 768px) {
         &__content {
@@ -96,12 +101,17 @@
     }
 
     @include media-breakpoint-down(xl) {
-        height: 130vh !important;
         &__bg-color {
-            height: 85vh;
+            height: 68vh;
         } 
     }
     @include media-breakpoint-up(md) {
         color: $white !important;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    #skills {
+        margin-top: 5rem;
     }
 }
