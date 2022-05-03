@@ -6,6 +6,12 @@
     width: $width;
     height: 50px;
     border-radius: 15px;
-    color: $white;
+    color: $white !important;
+    font-weight: bold;
+    border: none;
     @include gradient;
+    &:hover {
+        @include gradient($opacity: 0.9);
+        transition: background-image 500ms;
+    }
 }
