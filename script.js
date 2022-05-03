@@ -38,3 +38,11 @@ darkModeToggle.addEventListener("click", ()=> {
         enableDarkMode();
     }
 });
+
+// Downloads the resume
+function download(fileUrl, fileName) {
+    let a = document.createElement("a");
+    a.href = fileUrl;
+    a.setAttribute("download", fileName);
+    a.click();
+}
