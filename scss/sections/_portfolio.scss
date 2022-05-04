@@ -1,0 +1,53 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+@use '../components/buttons' as *;
+@use '../components/animations' as *;
+
+#portfolio {
+    margin: 100px 0;
+}
+
+.portfolio-container {
+    
+    h3 {
+        padding: 0 5px;
+        margin: 7px auto;
+        width: fit-content;
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to left, $primary, $secondary);
+        border-image-slice: 1;
+    }
+    p {
+        padding: 15px;
+        color: $white !important;
+        background-color: rgb($black, 0.4);
+    }
+
+    &__project {
+        width: 30%;
+        margin: 5px;
+        padding: 10px;
+        @include gradient(to bottom, 0.15);
+    }
+
+    &__project-img {
+        width: 100%;
+        margin: 0 auto 15px;
+    }
+
+    &__icon {
+        width: 30px;
+    }
+
+    @include media-breakpoint-down(md) {
+        &__project {
+            width: 98% !important;
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        &__project {
+            width: 48%;
+        }
+    }
+}
