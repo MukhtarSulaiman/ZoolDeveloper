@@ -11,7 +11,7 @@
     
     h3 {
         padding: 0 5px;
-        margin: 7px auto;
+        margin: 0px auto 10px;
         width: fit-content;
         border-width: 2px;
         border-style: solid;
@@ -27,13 +27,14 @@
     &__project {
         width: 30%;
         margin: 5px;
-        padding: 10px;
+        padding: 20px;
         @include gradient(to bottom, 0.15);
     }
 
     &__project-img {
         width: 100%;
         margin: 0 auto 15px;
+        border: 1px solid rgb($black, 0.4);
     }
 
     &__icon {
