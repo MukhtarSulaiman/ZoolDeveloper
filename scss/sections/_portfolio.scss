@@ -18,6 +18,9 @@
         border-image: linear-gradient(to left, $primary, $secondary);
         border-image-slice: 1;
     }
+    h4 {
+        margin-bottom: 20px;
+    }
     p {
         padding: 15px;
         color: $white !important;
@@ -25,8 +28,8 @@
     }
 
     &__project {
-        width: 30%;
-        margin: 5px;
+        width: 28%;
+        margin: 10px;
         padding: 20px;
         @include gradient(to bottom, 0.15);
     }
@@ -36,9 +39,17 @@
         margin: 0 auto 15px;
         border: 1px solid rgb($black, 0.4);
     }
+    &__techno {
+        text-align: center;
+    }
+
+    &__icons-wrapper {
+        display: flex !important;
+        justify-content: space-around !important;
+    }
 
     &__icon {
-        width: 30px;
+        height: 25px;
     }
 
     @include media-breakpoint-down(md) {
@@ -48,7 +59,13 @@
     }
     @include media-breakpoint-down(lg) {
         &__project {
-            width: 48%;
+            width: 47%;
         }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    #portfolio {
+       margin-top: 170px;
     }
 }
