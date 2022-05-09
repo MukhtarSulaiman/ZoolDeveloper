@@ -22,23 +22,64 @@
         margin-bottom: 20px;
     }
     p {
-        padding: 15px;
+        padding: 15px 19px;
         color: $white !important;
-        background-color: rgb($black, 0.4);
+        background-color: rgb($black, 0.3);
+        transform: scaleX(1.1);
     }
 
     &__project {
         width: 28%;
         margin: 10px;
         padding: 20px;
+        overflow: hidden;
         @include gradient(to bottom, 0.15);
+       
+        &:hover .portfolio-container__external-links  {
+                display: block;
+                width: 100%;
+                height: 110%;
+                position: absolute;                
+                left: 0;
+                background-color: rgb($primary, 0.3);
+                transform: scaleX(1.1);
+                @include flexbox(space-around);
+                @include animation(800ms) {
+                    0% {top: 100%;}
+                    100% { top:0%;};
+            }
+            a {
+                @include custom-btn(130px);
+                @include flexbox;
+                text-decoration: none;
+                font-size: 0.8rem;
+            }
+            i {
+                margin-left: 3px;
+                color: $white !important;
+            }
+        }
+
+        &:hover .portfolio-container__project-img {
+            transform: scale(1.1);
+        }
+        &:hover p,
+        &:hover h4 {
+            opacity: 0.3 !important;
+        }
     }
 
     &__project-img {
         width: 100%;
         margin: 0 auto 15px;
-        border: 1px solid rgb($black, 0.4);
+        transition: transform 500ms linear;
+        box-shadow: 0 0 0.5px $dark;
     }
+
+    &__content {
+        position: relative;
+    }
+
     &__techno {
         text-align: center;
     }
@@ -51,6 +92,10 @@
     &__icon {
         height: 25px;
     }
+    
+    &__external-links {
+        display: none;
+    }
 
     @include media-breakpoint-down(md) {
         &__project {
@@ -60,6 +105,11 @@
     @include media-breakpoint-down(lg) {
         &__project {
             width: 47%;
+        }
+    }
+    @include media-breakpoint-down(xl) {
+        &__project:hover &__external-links {
+            @include flexbox($justify-content: space-evenly !important, $flex-direction: column !important);
         }
     }
 }
