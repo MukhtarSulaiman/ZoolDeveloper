@@ -18,7 +18,7 @@
 
     &__bg-color  {
         width: 45%;
-        height: 550px;
+        height: 480px;
         @include gradient(to bottom, 0.17);
 
         h3 {
@@ -71,7 +71,7 @@
     button {
         @include custom-btn(200px);
         position: absolute;
-        bottom: 165px;
+        bottom: 155px;
     }    
     @include media-breakpoint-down(sm) {
         &__content {
