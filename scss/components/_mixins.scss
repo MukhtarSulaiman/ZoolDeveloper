@@ -10,3 +10,11 @@
     align-items: $align-items;
     flex-direction: $flex-direction;
 }
+
+// This mixin is not yet used 
+@mixin border-gradient($width: 2px) {
+    border-width: $width;
+    border-style: solid;
+    border-image: linear-gradient(to left, $primary, $secondary);
+    border-image-slice: 1;
+}
