@@ -1,0 +1,40 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+@use '../components/buttons' as *;
+@use '../components/animations' as *;
+
+.education-container {
+    &__education {
+        position: relative;
+        height: 70px;
+        margin-bottom: 7px;
+        &::before {
+            content: "";
+            width: 15%;
+            height: 3px;
+            position: absolute;
+            left: 0px;
+            bottom: 13px;
+            opacity: 1 !important;
+            @include gradient;
+        }
+    }
+    img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+    p {
+        position: absolute;
+        left: 20%;
+        opacity: 0.6;
+    }
+
+    @include media-breakpoint-down(lg) {
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
