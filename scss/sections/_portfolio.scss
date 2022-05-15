@@ -104,6 +104,10 @@
     @include media-breakpoint-down(lg) {
         &__project {
             width: 47%;
+            margin: 10px !important;
+        }
+        p {
+            margin: 0 15px;
         }
     }
     @include media-breakpoint-down(xl) {
