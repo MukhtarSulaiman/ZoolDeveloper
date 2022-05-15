@@ -3,26 +3,30 @@
 @use '../components/buttons' as *;
 @use '../components/animations' as *;
 
-.education-container {
+.education-container {   
+    &__bg-img {
+        height: 380px;
+        background-image: url("../../assets/images/backgrounds/bulding-bg.webp");
+        background-repeat: no-repeat;
+        background-position: cover;
+        background-position: 30% 20%;
+    }
+
     &__education {
         position: relative;
         height: 70px;
         margin-bottom: 7px;
         &::before {
-            content: "";
-            width: 15%;
-            height: 3px;
-            position: absolute;
-            left: 0px;
-            bottom: 13px;
-            opacity: 1 !important;
+            @include line(15%, 3px, 0, $bottom: 13px);
             @include gradient;
         }
-    }
-    img {
-        width: 50%;
-        height: 100%;
-        object-fit: cover;
+        &:hover::before {
+            @include animation(1s) {
+                0% {width: 15%;} 
+                50% {width: 0%;}
+                100% { width: 15%;}
+            }
+        }
     }
     p {
         position: absolute;
@@ -30,11 +34,17 @@
         opacity: 0.6;
     }
 
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-up(md) {
+        &__bg-img {
+            width: 285px !important;
+           margin-right: 3rem !important;
+           margin-left: 2rem;
+        }
+    }
 
-        img {
-            height: 100%;
-            object-fit: cover;
+    @include media-breakpoint-up(lg) {
+        &__bg-img {
+            width: 310px !important;
         }
     }
 }
