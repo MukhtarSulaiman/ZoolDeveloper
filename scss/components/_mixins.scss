@@ -18,3 +18,15 @@
     border-image: linear-gradient(to left, $primary, $secondary);
     border-image-slice: 1;
 }
+
+// This mixin line is gradient and animated in some parts!
+@mixin line ($width: 60%, $height: 2px, $left: 12px, $right: auto, $top: auto, $bottom: 7px) {
+    content: "";
+    width: $width;
+    height: $height;
+    position: absolute;
+    left: $left;
+    bottom: $bottom;
+    top: $top;
+    right: $right;
+}
