@@ -1,59 +1,165 @@
+/** @format */
+
 @use '../custom' as *;
 @use '../components/mixins' as *;
 @use '../components/animations' as *;
 
-.education-container {   
-    
-    &__bg-img {
-        width: 100%;
-        height: 380px;
-        padding: 0;
-        position: relative;
-        overflow: hidden;
-        box-shadow: 10px 10px 2px 1px lighten($black, 30%);
+.education-container {
+	&__bg-img {
+		width: 100%;
+		height: 380px;
+		padding: 0;
+		position: relative;
+		overflow: hidden;
+		box-shadow: 10px 10px 2px 1px lighten($black, 30%);
 
-        .img-holder {
-            width: 100%; 
-            height: 100%;
-            background-image: url("../../assets/images/backgrounds/bulding-bg.webp");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 30% 20%;
-            transition: all 1s;  
-            &:hover {
-                transform: scale(1.3);
+		.img-holder {
+			width: 100%;
+			height: 100%;
+			background-image: url('../../assets/images/backgrounds/bulding-bg.webp');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 30% 20%;
+			transition: all 1s;
+			&:hover {
+				transform: scale(1.3);
+			}
+		}
+	}
+
+	&__education {
+		position: relative;
+		height: 70px;
+		margin-bottom: 7px;
+		&::before {
+			@include line(15%, 3px, 0, $bottom: 13px);
+			@include gradient;
+		}
+		&:hover::before {
+			@include animation(1s) {
+				0% {
+					width: 15%;
+				}
+				50% {
+					width: 0%;
+				}
+				100% {
+					width: 15%;
+				}
+			}
+		}
+	}
+
+	p {
+		position: absolute;
+		left: 20%;
+		opacity: 0.6;
+	}
+
+	@include media-breakpoint-up(md) {
+		&__bg-img {
+			width: 285px !important;
+			margin-right: 3rem !important;
+			margin-left: 2rem;
+		}
+	}
+}
+
+.language-container {
+	width: 70%;
+	margin: 4rem auto;
+    padding-right: 5rem;
+	@include flexbox(start);
+
+	&__lang-icon {
+		width: 60px;
+		height: 60px;
+		margin-right: 10rem;
+		border: 2px solid transparent;
+		border-radius: 50%;
+		background-origin: border-box;
+		background-image: linear-gradient(to left, $primary, $secondary);
+		@include flexbox;
+		i {
+			font-size: 2.5rem;
+			color: $white !important;
+		}
+		&::after {
+			@include line(143px, $left: 100%, $top: 50%);
+			@include gradient;
+		}
+	}
+
+	&__languages {
+		@include flexbox(space-between, $align-items: left, $flex-direction: column);
+		width: inherit;
+        height: 100px;
+		// background-color:coral;
+		&::before,
+		&::after {
+			@include gradient;
+		}
+		&::before {
+			@include line($width: 2px, $height: 100%, $left: -20px, $top: 0);
+		}
+
+		small::before {
+			@include gradient;
+            height: 6px !important;
+			left: 70px !important;
+
+		}
+
+		:nth-child(1)::before {
+			@include line(70%, $top: 9px);
+		}
+		:nth-child(2)::before {
+			@include line(85%, $top: 48.5px);
+		}
+		:nth-child(3)::before {
+			@include line(100%, $bottom: 6px);
+		}
+
+       .progress-bars-container {
+            position: absolute;
+            height: 115px;
+            right: -120px;
+            top: -6px;
+            @include flexbox(space-between, $align-items: left, $flex-direction: column);
+            .progress-bar-circle {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                @include gradient;
+                @include flexbox;
+           
+                &::after {
+                    content: "";        
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: var(--color-page-background);
+                }
+                .progress-value {
+                    position: absolute;
+                    font-size: 0.6rem;
+                    color:  var(--color-text-icon);;
+                } 
             }
         }
+	}
+
+    @include media-breakpoint-down(sm) {
+        width: 90% !important;
+        padding-right: 0 !important;
     }
 
-    &__education {
-        position: relative;
-        height: 70px;
-        margin-bottom: 7px;
-        &::before {
-            @include line(15%, 3px, 0, $bottom: 13px);
-            @include gradient;
-        }
-        &:hover::before {
-            @include animation(1s) {
-                0% {width: 15%;} 
-                50% {width: 0%;}
-                100% { width: 15%;}
+    @include media-breakpoint-down(lg) {
+        &__lang-icon {
+            margin-right: 5rem !important;
+            &::after {
+                width: 63px !important;
             }
-        }
-    }
-    
-    p {
-        position: absolute;
-        left: 20%;
-        opacity: 0.6;
-    }
-
-    @include media-breakpoint-up(md) {
-        &__bg-img {
-            width: 285px !important;
-            margin-right: 3rem !important;
-            margin-left: 2rem;
         }
     }
 }
