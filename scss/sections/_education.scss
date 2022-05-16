@@ -152,11 +152,40 @@
     @include media-breakpoint-down(sm) {
         width: 90% !important;
         padding-right: 0 !important;
+        flex-direction: column;
+        
+        &__lang-icon {
+            margin-bottom: 2rem;
+            margin-right: 0 !important;
+            &::after {
+               display: none;               
+            }
+        }
+
+        &__languages {
+            
+            &::before {
+                display: none;
+            }
+            :nth-child(1)::before {
+                width: 37%;
+            }
+            :nth-child(2)::before {
+                width: 52%;
+            }
+            :nth-child(3)::before {
+                width: 67%;
+            }
+
+            .progress-bars-container {
+                right: -25px !important;
+            }
+        }
     }
 
     @include media-breakpoint-down(lg) {
         &__lang-icon {
-            margin-right: 5rem !important;
+            margin-right: 5rem;
             &::after {
                 width: 63px !important;
             }
