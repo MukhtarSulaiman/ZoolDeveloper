@@ -1,15 +1,29 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
-@use '../components/buttons' as *;
 @use '../components/animations' as *;
 
 .education-container {   
+    
     &__bg-img {
+        width: 100%;
         height: 380px;
-        background-image: url("../../assets/images/backgrounds/bulding-bg.webp");
-        background-repeat: no-repeat;
-        background-position: cover;
-        background-position: 30% 20%;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 10px 10px 2px 1px lighten($black, 30%);
+
+        .img-holder {
+            width: 100%; 
+            height: 100%;
+            background-image: url("../../assets/images/backgrounds/bulding-bg.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 30% 20%;
+            transition: all 1s;  
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
     }
 
     &__education {
@@ -28,6 +42,7 @@
             }
         }
     }
+    
     p {
         position: absolute;
         left: 20%;
@@ -37,14 +52,8 @@
     @include media-breakpoint-up(md) {
         &__bg-img {
             width: 285px !important;
-           margin-right: 3rem !important;
-           margin-left: 2rem;
-        }
-    }
-
-    @include media-breakpoint-up(lg) {
-        &__bg-img {
-            width: 310px !important;
+            margin-right: 3rem !important;
+            margin-left: 2rem;
         }
     }
 }
