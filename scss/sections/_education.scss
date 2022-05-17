@@ -67,7 +67,7 @@
 
 .language-container {
 	width: 70%;
-	margin: 4rem auto;
+	margin: 7rem auto;
     padding-right: 5rem;
 	@include flexbox(start);
 
@@ -107,17 +107,28 @@
 			@include gradient;
             height: 6px !important;
 			left: 70px !important;
-
 		}
 
 		:nth-child(1)::before {
-			@include line(70%, $top: 9px);
+			@include line(0%, $top: 9px);
+			@include animation(1.8s){
+				0% {width: 0px;}
+				100% {width: 70%;}
+			}
 		}
 		:nth-child(2)::before {
-			@include line(85%, $top: 48.5px);
+			@include line(0%, $top: 48.5px);
+			@include animation(2s){
+				0% {width: 0px;}
+				100% {width: 85%;}
+			}
 		}
 		:nth-child(3)::before {
-			@include line(100%, $bottom: 6px);
+			@include line(0%, $bottom: 6px);
+			@include animation(2.2s){
+				0% {width: 0px;}
+				100% {width: 100%;}
+			}
 		}
 
        .progress-bars-container {
@@ -168,13 +179,22 @@
                 display: none;
             }
             :nth-child(1)::before {
-                width: 37%;
+                @include animation(1.8s){
+					0% {width: 0px;}
+					100% {width: 37%;}
+				}
             }
             :nth-child(2)::before {
-                width: 52%;
+                @include animation(2s){
+					0% {width: 0px;}
+					100% {width: 52%;}
+				}
             }
             :nth-child(3)::before {
-                width: 67%;
+                @include animation(2.2s){
+					0% {width: 0px;}
+					100% {width: 67%;}
+				}
             }
 
             .progress-bars-container {
