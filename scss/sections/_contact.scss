@@ -1,0 +1,38 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+@use '../components/buttons' as *;
+
+
+.discription-wrapper {
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    width: 330px;
+    height: 130px;
+    overflow: hidden;
+    @include flexbox;
+
+    &__discription {
+        width: 100%;
+        height:100%;
+        padding: 1rem;
+        background-color: var(--color-text-icon);
+        transform:skewX(-40deg);
+        position: absolute;
+        left: 55px;
+
+        p {
+            transform: skew(40deg);
+            text-align: right;
+            position: absolute;
+            color: var(--color-page-background) !important;
+        }
+    }
+    
+}
+
+@include media-breakpoint-down(md) {
+    .discription-wrapper {
+        top: 70px !important;
+    }
+}
