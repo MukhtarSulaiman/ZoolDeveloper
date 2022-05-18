@@ -1,38 +1,61 @@
+/** @format */
+
 @use '../custom' as *;
 @use '../components/mixins' as *;
 @use '../components/buttons' as *;
 
-
 .discription-wrapper {
-    position: absolute;
-    right: -10px;
-    top: 10px;
-    width: 330px;
-    height: 130px;
-    overflow: hidden;
-    @include flexbox;
+	position: absolute;
+	right: -10px;
+	top: 10px;
+	width: 330px;
+	height: 130px;
+	overflow: hidden;
+	@include flexbox;
 
-    &__discription {
-        width: 100%;
-        height:100%;
-        padding: 1rem;
-        background-color: var(--color-text-icon);
-        transform:skewX(-40deg);
-        position: absolute;
-        left: 55px;
+	&__discription {
+		width: 100%;
+		height: 100%;
+		padding: 1rem;
+		background-color: var(--color-text-icon);
+		transform: skewX(-40deg);
+		position: absolute;
+		left: 55px;
 
-        p {
-            transform: skew(40deg);
-            text-align: right;
-            position: absolute;
-            color: var(--color-page-background) !important;
-        }
-    }
-    
+		p {
+			transform: skew(40deg);
+			text-align: right;
+			position: absolute;
+			color: var(--color-page-background) !important;
+		}
+	}
+}
+
+.contact-container {
+	padding: 8rem 5rem;
+	min-height: 600px;
+
+	&__network-personal-info {
+		height: inherit;
+		@include flexbox(space-between, start, column);
+
+		h3 {
+			@include border-gradient(0);
+			border-bottom: 3px solid;
+			border-left: 3px solid;
+			margin-bottom: 3rem;
+			padding: 0 0 0.6rem 0.6rem;
+		}
+	}
+	
+	&__network-account {
+		@include flexbox(space-between);
+		@include social-icon-btn;
+	}
 }
 
 @include media-breakpoint-down(md) {
-    .discription-wrapper {
-        top: 70px !important;
-    }
+	.discription-wrapper {
+		top: 70px !important;
+	}
 }
