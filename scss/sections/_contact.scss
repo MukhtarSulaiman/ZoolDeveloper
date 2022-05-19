@@ -51,7 +51,7 @@
 
 	&__network-account {
 		@include flexbox(space-between);
-		@include social-icon-btn;
+		@include contact-and-network-icon;
 	}
 
 	&__personal-info {
@@ -60,7 +60,7 @@
 	}
 	&__content-group {
 		@include flexbox;
-		@include social-icon-btn(
+		@include contact-and-network-icon(
 			$selector: '.contact-icon-bg',
 			$transform: scale(1)
 		);

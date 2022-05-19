@@ -17,8 +17,8 @@
 	}
 }
 
-@mixin social-icon-btn($margin: 0){
-	.social-icon-wrapper {
+@mixin contact-and-network-icon($margin: 0, $selector: '.social-icon-wrapper', $transform: scale(1.5)){
+	#{$selector} {
 		width: 35px;
 		height: 35px;
 		border-radius: 50%;
@@ -28,7 +28,7 @@
 		@include gradient;
        
         &:hover {
-                transform: scale(1.5);     
+                transform: $transform;     
             }
 
 		i {
