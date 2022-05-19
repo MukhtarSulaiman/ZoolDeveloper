@@ -3,6 +3,7 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 @use '../components/buttons' as *;
+@use '../components/animations' as *;
 
 .discription-wrapper {
 	position: absolute;
@@ -33,7 +34,7 @@
 
 .contact-container {
 	padding: 8rem 5rem;
-	min-height: 600px;
+	min-height: 630px;
 
 	&__network-personal-info {
 		height: inherit;
@@ -47,10 +48,34 @@
 			padding: 0 0 0.6rem 0.6rem;
 		}
 	}
-	
+
 	&__network-account {
 		@include flexbox(space-between);
 		@include social-icon-btn;
+	}
+
+	&__personal-info {
+		min-height: 140px;
+		@include flexbox(space-between, start, column);
+	}
+	&__content-group {
+		@include flexbox;
+		@include social-icon-btn(
+			$selector: '.contact-icon-bg',
+			$transform: scale(1)
+		);
+
+		small {
+			margin-left: 2rem;
+		}
+		&:hover i{
+			@include animation(500ms) {
+				0% {transform: rotate(0deg);}
+				33% {transform: rotate(-30deg);}
+				66% {transform: rotate(60deg);}
+				100% {transform: rotate(0deg);}
+			}
+		}
 	}
 }
 
