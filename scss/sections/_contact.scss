@@ -167,6 +167,24 @@
 	}
 }
 
+.download {
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 300;
+	button {
+		@include custom-btn;
+	}
+	i {
+		width: 1.6rem;
+		height: 1.6rem;
+		border-radius: 50%;
+		padding: 3px;
+		border: 1px solid;
+		color: $white !important;
+	}
+}
+
 @include media-breakpoint-down(sm) {
 	.contact-container {
 		padding: 6rem 2rem !important;
