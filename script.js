@@ -105,3 +105,6 @@ const progressThree = setInterval(() => {
 		clearInterval(progressThree);
 	}
 }, speed);
+
+
+document.querySelector("footer>small>span").innerText = new Date().getFullYear();
