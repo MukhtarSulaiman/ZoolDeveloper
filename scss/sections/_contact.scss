@@ -148,7 +148,7 @@
 			color: var(--color-text-icon);
 			opacity: 0.7;
 			background: transparent;
-			border-bottom: 2px solid rgb($white, 0.5);
+			border-bottom: 2px solid var(--color-text-icon);
 
 			&:focus {
 				border-color: var(--color-text-icon);
@@ -157,12 +157,19 @@
 
 		textarea {
 			min-height: 90px;
+			max-height: 120px;
 			transition: min-height 400ms;
 
 			&:focus {
 				min-height: 120px;
 			}
 		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.contact-container {
+		padding: 6rem 2rem !important;
 	}
 }
 
@@ -173,8 +180,14 @@
 
 	.contact-container {
 		flex-direction: column-reverse !important;
+
+		&__network-personal-info {
+			height: 350px !important;
+		}
+
 		&__form-contact {
 			width: 100% !important;
+			margin: 7rem 0;
 		}
 	}
 }
