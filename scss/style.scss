@@ -23,6 +23,10 @@
     --color-text-icon: #{$white};
   }
 
+  html {
+    scroll-padding-top: 5rem;
+  }
+
   body {
     background-color: var(--color-page-background);
     color: var(--color-text-icon);
