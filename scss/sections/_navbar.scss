@@ -23,8 +23,8 @@
 		}
 	}
 
-	a, i {
-		color: $white !important;
+	a {
+		color: rgb($white, 0.7) !important;
 	}
 
 	span {
@@ -79,6 +79,11 @@
 		padding: 0 0.2rem;
 	}
 
+    .show {
+        transition: margin-top 400ms;
+        margin-top: 2rem !important;
+    }
+
 	.nav-item-border {
 		position: relative;
 		&:hover {
@@ -97,6 +102,9 @@
 
 	.nav-item-mode-switch {
 		margin-left: 20px;
+        i {
+            color: $white !important;
+        }
 	}
 
 	.fa-moon {
