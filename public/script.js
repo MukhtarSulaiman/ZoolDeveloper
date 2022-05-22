@@ -108,3 +108,38 @@ const progressThree = setInterval(() => {
 
 
 document.querySelector("footer>small>span").innerText = new Date().getFullYear();
+
+
+const contactForm = document.querySelector(".contact-container__form-contact");
+
+let fullName = document.getElementById("fullName");
+let email = document.getElementById("email");
+let subject = document.getElementById("subject");
+let message = document.getElementById("message");
+
+contactForm.addEventListener('submit', (e) => {
+	e.preventDefault();
+
+	let formData = {
+		fulllName: fullName.value,
+		email: email.value,
+		subject: subject.value,
+		message: message.value
+	}
+
+	let xhr = new XMLHttpRequest();
+	xhr.open("POST", "/")
+	xhr.setRequestHeader("content-type", "application/json");
+	xhr.onload = function () {
+		if (xhr.status == 200) {
+			alert(xhr.responseText.message)
+			fullName.value = '';
+			email.value = '';
+			subject.value = '';
+			message.value = '';
+		} else {
+			alert(xhr.responseText.message)
+		}
+	}
+	xhr.send(JSON.stringify(formData));
+});
