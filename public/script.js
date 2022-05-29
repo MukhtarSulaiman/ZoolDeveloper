@@ -121,7 +121,7 @@ contactForm.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	let formData = {
-		fulllName: fullName.value,
+		fullName: fullName.value,
 		email: email.value,
 		subject: subject.value,
 		message: message.value
