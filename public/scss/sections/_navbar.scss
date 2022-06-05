@@ -99,6 +99,11 @@
 			transition: transform 350ms linear;
 		}
 	}
+	.active  {	
+		&::after {
+			transform: scaleX(1);
+		}
+	}
 
 	.nav-item-mode-switch {
 		margin-left: 20px;

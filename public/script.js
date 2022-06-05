@@ -40,6 +40,23 @@ darkModeToggle.addEventListener('click', () => {
 	}
 });
 
+// Animates navbar borders while scrolling
+const scrollingSpy = () => {
+	const sections = document.querySelectorAll('section');
+	window.onscroll = () => {
+		const scrollNum = document.documentElement.scrollTop || document.body.scrollTop;
+		for (let section in sections) {
+			
+			if (sections.hasOwnProperty(section) && sections[section].offsetTop - 100 <= scrollNum) {
+				const id = sections[section].id;
+				document.querySelector('.active').classList.remove('active');
+				document.querySelector( `a[href*=${ id }]` ).parentNode.classList.add( 'active' );
+			}
+		}
+	} 
+}
+scrollingSpy();
+
 // Downloads the resume
 function download(fileUrl, fileName) {
 	let a = document.createElement('a');
@@ -132,13 +149,13 @@ contactForm.addEventListener('submit', (e) => {
 	xhr.setRequestHeader("content-type", "application/json");
 	xhr.onload = function () {
 		if (xhr.status == 200) {
-			alert(xhr.responseText.message)
+			alert(xhr.responseText)	
 			fullName.value = '';
 			email.value = '';
 			subject.value = '';
 			message.value = '';
 		} else {
-			alert(xhr.responseText.message)
+			alert(xhr.responseText)
 		}
 	}
 	xhr.send(JSON.stringify(formData));
