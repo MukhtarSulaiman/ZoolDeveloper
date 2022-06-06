@@ -68,7 +68,7 @@
 .language-container {
 	width: 70%;
 	margin: 7rem auto;
-    padding-right: 5rem;
+	padding-right: 5rem;
 	@include flexbox(start);
 
 	&__lang-icon {
@@ -91,124 +91,167 @@
 	}
 
 	&__languages {
-		@include flexbox(space-between, $align-items: left, $flex-direction: column);
+		@include flexbox(
+			space-between,
+			$align-items: left,
+			$flex-direction: column
+		);
 		width: inherit;
-        height: 100px;
-		// background-color:coral;
+		height: 100px;
+		
 		&::before,
 		&::after {
 			@include gradient;
+
 		}
 		&::before {
-			@include line($width: 2px, $height: 100%, $left: -20px, $top: 0);
+			@include line(
+				$width: 2px,
+				$height: 100%,
+				$left: -20px,
+				$top: 0
+			);
 		}
 
 		small::before {
 			@include gradient;
-            height: 6px !important;
+			height: 6px !important;
 			left: 70px !important;
 		}
-
+		:nth-child(n):before {
+			display: none;
+		}
 		:nth-child(1)::before {
 			@include line(0%, $top: 9px);
-			@include animation(1.8s){
-				0% {width: 0px;}
-				100% {width: 70%;}
+			@include animation(1.8s) {
+				0% {
+					width: 0px;
+				}
+				100% {
+					width: 70%;
+				}
 			}
 		}
 		:nth-child(2)::before {
 			@include line(0%, $top: 48.5px);
-			@include animation(2s){
-				0% {width: 0px;}
-				100% {width: 85%;}
+			@include animation(2s) {
+				0% {
+					width: 0px;
+				}
+				100% {
+					width: 85%;
+				}
 			}
 		}
 		:nth-child(3)::before {
 			@include line(0%, $bottom: 6px);
-			@include animation(2.2s){
-				0% {width: 0px;}
-				100% {width: 100%;}
+			@include animation(2.2s) {
+				0% {
+					width: 0px;
+				}
+				100% {
+					width: 100%;
+				}
 			}
 		}
 
-       .progress-bars-container {
-            position: absolute;
-            height: 115px;
-            right: -120px;
-            top: -6px;
-            @include flexbox(space-between, $align-items: left, $flex-direction: column);
-            .progress-bar-circle {
-                width: 35px;
-                height: 35px;
-                border-radius: 50%;
-                @include gradient;
-                @include flexbox;
-           
-                &::after {
-                    content: "";        
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50%;
-                    background-color: var(--color-page-background);
-                }
-                .progress-value {
-                    position: absolute;
-                    font-size: 0.6rem;
-                    color:  var(--color-text-icon);;
-                } 
-            }
-        }
+		.progress-bars-container {
+			position: absolute;
+			height: 115px;
+			right: -120px;
+			top: -6px;
+			display: none;
+			@include flexbox(
+				space-between,
+				$align-items: left,
+				$flex-direction: column
+			);
+			.progress-bar-circle {
+				width: 35px;
+				height: 35px;
+				border-radius: 50%;
+				
+				@include gradient;
+				@include flexbox;
+				&::after {
+					content: '';
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+					background-color: var(--color-page-background);
+				}
+				.progress-value {
+					position: absolute;
+					font-size: 0.6rem;
+					color: var(--color-text-icon);
+				}
+			}
+		}
+		.show, .show::before {
+			display: flex !important;
+		}
 	}
 
-    @include media-breakpoint-down(sm) {
-        width: 90% !important;
-        padding-right: 0 !important;
-        flex-direction: column;
-        
-        &__lang-icon {
-            margin-bottom: 2rem;
-            margin-right: 0 !important;
-            &::after {
-               display: none;               
-            }
-        }
+	@include media-breakpoint-down(sm) {
+		width: 90% !important;
+		padding-right: 0 !important;
+		flex-direction: column;
 
-        &__languages {
-            
-            &::before {
-                display: none;
-            }
-            :nth-child(1)::before {
-                @include animation(1.8s){
-					0% {width: 0px;}
-					100% {width: 37%;}
-				}
-            }
-            :nth-child(2)::before {
-                @include animation(2s){
-					0% {width: 0px;}
-					100% {width: 52%;}
-				}
-            }
-            :nth-child(3)::before {
-                @include animation(2.2s){
-					0% {width: 0px;}
-					100% {width: 67%;}
-				}
-            }
+		&__lang-icon {
+			margin-bottom: 2rem;
+			margin-right: 0 !important;
+			&::after {
+				display: none;
+			}
+		}
 
-            .progress-bars-container {
-                right: -25px !important;
-            }
-        }
-    }
+		&__languages {
+			&::before {
+				display: none;
+			}
+			:nth-child(1)::before {
+				@include animation(1.8s) {
+					0% {
+						width: 0px;
+					}
+					100% {
+						width: 37%;
+					}
+				}
+			}
+			:nth-child(2)::before {
+				@include animation(2s) {
+					0% {
+						width: 0px;
+					}
+					100% {
+						width: 52%;
+					}
+				}
+			}
+			:nth-child(3)::before {
+				@include animation(2.2s) {
+					0% {
+						width: 0px;
+					}
+					100% {
+						width: 67%;
+					}
+				}
+			}
 
-    @include media-breakpoint-down(lg) {
-        &__lang-icon {
-            margin-right: 5rem;
-            &::after {
-                width: 63px !important;
-            }
-        }
-    }
+			.progress-bars-container {
+				right: -25px !important;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		&__lang-icon {
+			margin-right: 5rem;
+			&::after {
+				width: 63px !important;
+			}
+		}
+	}
 }

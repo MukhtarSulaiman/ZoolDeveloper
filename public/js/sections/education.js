@@ -9,51 +9,72 @@ const progressValueOne = document.querySelector('.progress-value-one');
 const progressValueTwo = document.querySelector('.progress-value-two');
 const progressValueThree = document.querySelector('.progress-value-three');
 
-let progressValue1 = 0;
-let progressValue2 = 0;
-let progressValue3 = 0;
 
-let progressEndValue1 = 70;
-let progressEndValue2 = 85;
-let progressEndValue3 = 100;
 
-const speed = 20;
+function animateProgressCircles() {
 
-// progress circular bar 1
-const progressOne = setInterval(() => {
-	progressValue1++;
-	progressValueOne.textContent = `${progressValue1}%`;
-	progressBarCircular1.style.background = `conic-gradient(
+	let progressValue1 = 0;
+	let progressValue2 = 0;
+	let progressValue3 = 0;
+
+	let progressEndValue1 = 70;
+	let progressEndValue2 = 85;
+	let progressEndValue3 = 100;
+
+	const speed = 20;
+
+	// progress circular bar 1
+	const progressOne = setInterval(() => {
+		progressValue1++;
+		progressValueOne.textContent = `${progressValue1}%`;
+		progressBarCircular1.style.background = `conic-gradient(
         #BE2E73 ${progressValue1 * 3.6}deg,
         #000 ${progressValue1 * 3.6}deg
     )`;
-	if (progressValue1 === progressEndValue1) {
-		clearInterval(progressOne);
-	}
-}, speed);
+		if (progressValue1 === progressEndValue1) {
+			clearInterval(progressOne);
+		}
+	}, speed);
 
-// progress circular bar 2
-const progressTwo = setInterval(() => {
-	progressValue2++;
-	progressValueTwo.textContent = `${progressValue2}%`;
-	progressBarCircular2.style.background = `conic-gradient(
+	// progress circular bar 2
+	const progressTwo = setInterval(() => {
+		progressValue2++;
+		progressValueTwo.textContent = `${progressValue2}%`;
+		progressBarCircular2.style.background = `conic-gradient(
         #BE2E73 ${progressValue2 * 3.6}deg,
         #000 ${progressValue2 * 3.6}deg
     )`;
-	if (progressValue2 === progressEndValue2) {
-		clearInterval(progressTwo);
-	}
-}, speed);
+		if (progressValue2 === progressEndValue2) {
+			clearInterval(progressTwo);
+		}
+	}, speed);
 
-// progress circular bar 3
-const progressThree = setInterval(() => {
-	progressValue3++;
-	progressValueThree.textContent = `${progressValue3}%`;
-	progressBarCircular3.style.background = `conic-gradient(
+	// progress circular bar 3
+	const progressThree = setInterval(() => {
+		progressValue3++;
+		progressValueThree.textContent = `${progressValue3}%`;
+		progressBarCircular3.style.background = `conic-gradient(
         #BE2E73 ${progressValue3 * 3.6}deg,
         #000 ${progressValue3 * 3.6}deg
     )`;
-	if (progressValue3 === progressEndValue3) {
-		clearInterval(progressThree);
-	}
-}, speed);
+		if (progressValue3 === progressEndValue3) {
+			clearInterval(progressThree);
+		}
+	}, speed);
+}
+
+
+const selectors = document.querySelectorAll('.progress-bars-container, .lang-progress-bar');
+
+const observer = new IntersectionObserver(enteries => {
+	enteries.forEach(entery => {
+		entery.target.classList.toggle('show', entery.isIntersecting);
+	})
+	animateProgressCircles();
+}, {
+	threshold: 1
+});
+
+selectors.forEach(selector => {
+	observer.observe(selector);
+});
