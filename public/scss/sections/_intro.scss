@@ -21,17 +21,17 @@
 		opacity: 0;
 		position: relative;
 		@include contact-and-network-icon(7px);
-		@include animation(3s, 3s) {
+		@include animation(2s, 2s) {
 			0% {
 				opacity: 0;
-				transform: translateX(-150px);
+				transform: translateX(-118px);
 			}
 			20% {
 				opacity: 0.5;
 			}
 			100% {
 				opacity: 1;
-				transform: translateY(0px);
+				transform: translateX(0px);
 			}
 		}
 
@@ -56,7 +56,7 @@
 
 	&__greeting {
 		opacity: 0;
-		@include animation(3s) {
+		@include animation(2s) {
 			0% {
 				opacity: 0;
 				transform: translateY(-150px);
@@ -107,7 +107,7 @@
 		border: none;
 		opacity: 0;
 		@include custom-btn;
-		@include animation(3s, 3s) {
+		@include animation(2s, 2s) {
 			0% {
 				opacity: 0;
 				transform: translateY(150px);
@@ -128,18 +128,18 @@
 	}
 
 	&__img {
-		transform: scale(0);
-		@include animation(2s, 1.5s) {
+		transform: scale(1);
+		@include animation(2s) {
 			0% {
 				opacity: 0;
-				transform: scale(0.5);
+				transform: translateX(50px);
 			}
 			10% {
 				opacity: 0;
 			}
 			100% {
 				opacity: 1;
-				transform: scale(1);
+				transform: translateX(0);
 			}
 		}
 	}
