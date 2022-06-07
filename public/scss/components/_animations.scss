@@ -1,13 +1,25 @@
+/** @format */
+
 @use '../custom' as *;
 
-    // A customizable animation
-    @mixin animation($duration, $delay: 0s) {
-        $name: #{unique-id()};
-        @keyframes #{$name} {
-            @content;
-        }
-        animation-name: $name;
-        animation-duration: $duration;
-        animation-fill-mode: forwards;
-        animation-delay: $delay;
-    }
+// A customizable animation
+@mixin animation($duration, $delay: 0s) {
+	$name: #{unique-id()};
+	@keyframes #{$name} {
+		@content;
+	}
+	animation-name: $name;
+	animation-duration: $duration;
+	animation-fill-mode: forwards;
+	animation-delay: $delay;
+}
+@mixin animation-on-scroll(
+	$opacity: 0,
+	$transform-value: translateY(100px),
+    $transition-duration: 2s
+
+) {
+	opacity: $opacity;
+	transform: $transform-value;
+	transition:  opacity $transition-duration, transform $transition-duration;
+}
