@@ -33,6 +33,7 @@
         padding: 20px;
         overflow: hidden;
         @include gradient(to bottom, 0.15);
+        @include animation-on-scroll($transform-value: translateX(90px));
        
         &:hover .portfolio-container__external-links  {
             display: block;
@@ -66,6 +67,9 @@
         &:hover h4 {
             opacity: 0.3 !important;
         }
+    }
+    &__project.show {
+         @include animation-on-scroll(1, translateX(0));
     }
 
     &__project-img {

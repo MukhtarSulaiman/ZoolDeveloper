@@ -13,6 +13,7 @@
 	height: 130px;
 	overflow: hidden;
 	@include flexbox;
+	@include animation-on-scroll(0, translateX(120px));
 
 	&__discription {
 		width: 100%;
@@ -30,6 +31,9 @@
 			color: var(--color-page-background) !important;
 		}
 	}
+}
+.discription-wrapper.show {
+	@include animation-on-scroll(1, translateX(0) !important);
 }
 
 .contact-container {
@@ -192,6 +196,7 @@
 }
 
 @include media-breakpoint-down(md) {
+	
 	.discription-wrapper {
 		top: 70px !important;
 	}
@@ -207,5 +212,10 @@
 			width: 100% !important;
 			margin: 7rem 0;
 		}
+	}
+}
+@include media-breakpoint-down(lg) {
+	.discription-wrapper {
+		right: -28px !important;
 	}
 }
