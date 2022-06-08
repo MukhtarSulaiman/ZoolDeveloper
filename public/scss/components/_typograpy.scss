@@ -3,7 +3,7 @@
 
 h2 {
     margin-top: 15rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
@@ -27,4 +27,10 @@ h2 {
             100% {opacity: 1; bottom: 10px};
         } 
      }
+}
+
+@include media-breakpoint-down(sm) {
+    h2 {
+        margin-top: 10rem !important;
+    }
 }

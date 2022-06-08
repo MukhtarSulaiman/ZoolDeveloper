@@ -58,9 +58,9 @@
 
 	@include media-breakpoint-up(md) {
 		&__bg-img {
-			width: 285px !important;
-			margin-right: 3rem !important;
-			margin-left: 2rem;
+			width: 276px !important;
+			margin-right: 2rem !important;
+			margin-left: 1.5rem;
 		}
 	}
 }
@@ -118,7 +118,7 @@
 			height: 6px !important;
 			left: 70px !important;
 		}
-		:nth-child(n):before {
+		:nth-child(n)::before {
 			display: none;
 		}
 		:nth-child(1)::before {

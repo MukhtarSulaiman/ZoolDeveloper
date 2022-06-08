@@ -19,25 +19,38 @@
 @use './sections/footer';
 
 :root {
-    --color-page-background: #{$dark};
-    --color-text-icon: #{$white};
-  }
+	--color-page-background: #{$dark};
+	--color-text-icon: #{$white};
+}
 
-  html {
-    scroll-padding-top: 5rem;
-  }
+html {
+	scroll-padding-top: 5rem;
+}
 
-  body {
-    background-color: var(--color-page-background);
-    color: var(--color-text-icon);
-  }
+body {
+	background-color: var(--color-page-background);
+	color: var(--color-text-icon);
+}
 
-  .white {
-    --color-page-background: #{$white};
-    --color-text-icon: #{$dark};
-  }
+.white {
+	--color-page-background: #{$white};
+	--color-text-icon: #{$dark};
+}
 
-  h1, p, a, i,
-  .navbar-toggler-icon{
-    color: var(--color-text-icon) !important;
+main {
+  overflow: hidden;
+}
+
+h1,
+p,
+a,
+i,
+.navbar-toggler-icon {
+	color: var(--color-text-icon) !important;
+}
+
+@include media-breakpoint-down(lg) {
+	main {
+		padding: 0 1.7rem;
+	}
 }
