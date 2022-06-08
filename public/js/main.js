@@ -50,3 +50,27 @@ function download(fileUrl, fileName) {
 
 
 document.querySelector("footer>small>span").innerText = new Date().getFullYear();
+
+
+const selectors = document.querySelectorAll(
+	`.portfolio-container__project, 
+	.skills-container__content,
+	.lang-progress-bar,
+	.discription-wrapper`
+);
+
+const observer = new IntersectionObserver(enteries => {
+	enteries.forEach(entery => {
+		entery.target.classList.toggle('show', entery.isIntersecting);
+		if (entery.target.classList == 'lang-progress-bar show') {
+			// This function is declared in the .section/main.js file
+			animateProgressCircles();
+		}
+	})
+}, {
+	threshold: .3
+});
+
+selectors.forEach(selector => {
+	observer.observe(selector);
+});

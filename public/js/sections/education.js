@@ -10,7 +10,7 @@ const progressValueTwo = document.querySelector('.progress-value-two');
 const progressValueThree = document.querySelector('.progress-value-three');
 
 
-
+// This function is called from the main.js file
 function animateProgressCircles() {
 
 	let progressValue1 = 0;
@@ -62,19 +62,3 @@ function animateProgressCircles() {
 		}
 	}, speed);
 }
-
-
-const selectors = document.querySelectorAll('.progress-bars-container, .lang-progress-bar');
-
-const observer = new IntersectionObserver(enteries => {
-	enteries.forEach(entery => {
-		entery.target.classList.toggle('show', entery.isIntersecting);
-	})
-	animateProgressCircles();
-}, {
-	threshold: 1
-});
-
-selectors.forEach(selector => {
-	observer.observe(selector);
-});
