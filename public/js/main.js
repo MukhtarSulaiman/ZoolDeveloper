@@ -1,5 +1,11 @@
 /** @format */
 
+document.addEventListener('mousemove', (e) => {
+	const cursor1 = document.querySelector('.cursor1');
+	const cursor2 = document.querySelector('.cursor2');
+	cursor1.style.cssText = cursor2.style.cssText = `${'left:' + e.clientX + 'px; top: ' + e.clientY + 'px;'}`;
+});
+
 const sunIcon = document.getElementById('sun');
 const moonIcon = document.getElementById('moon');
 const menuIcon = document.querySelector('.navbar');

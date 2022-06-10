@@ -23,6 +23,11 @@
 	--color-text-icon: #{$white};
 }
 
+.white {
+	--color-page-background: #{$white};
+	--color-text-icon: #{$dark};
+}
+
 html {
 	scroll-padding-top: 5rem;
 }
@@ -30,11 +35,6 @@ html {
 body {
 	background-color: var(--color-page-background);
 	color: var(--color-text-icon);
-}
-
-.white {
-	--color-page-background: #{$white};
-	--color-text-icon: #{$dark};
 }
 
 main {
@@ -47,6 +47,27 @@ a,
 i,
 .navbar-toggler-icon {
 	color: var(--color-text-icon) !important;
+}
+
+.cursor {
+	position: fixed;
+	border-radius: 50%;
+	z-index: 10;
+	transition: .21s;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+}
+
+.cursor1 {
+	width: 50px;
+	height: 50px;
+	border: 1px solid $primary;
+}
+
+.cursor2 {
+	width: 7px;
+	height: 7px;
+	background-color:var(--color-text-icon);
 }
 
 @include media-breakpoint-down(lg) {
