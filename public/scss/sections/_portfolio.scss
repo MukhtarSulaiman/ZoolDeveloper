@@ -81,9 +81,12 @@
 
     &__content {
         position: relative;
+        min-height: 310px;
+        @include flexbox($justify-content: space-between , $flex-direction: column);
     }
 
     &__techno {
+        width: 100%; 
         text-align: center;
     }
 
