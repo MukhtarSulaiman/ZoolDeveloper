@@ -30,7 +30,7 @@ function changeLanguage(lang) {
 	} else if (lang === 'English') {
 		alert('This feature will be available soon !');
 	} else if (lang === 'Arabic') {
-		alert("! هذه الخاصية ستكون متاحة قريبًا ");
+		alert("هذه الخاصية ستكون متاحة قريبًا !");
 	}
 }
 
