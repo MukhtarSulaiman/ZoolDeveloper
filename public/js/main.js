@@ -1,9 +1,46 @@
 /** @format */
 
-document.addEventListener('mousemove', (e) => {
+const cursor1 = document.querySelector('.cursor1');
+const cursor2 = document.querySelector('.cursor2');
+const cursors = document.querySelectorAll('.cursor');
+const elements = document.querySelectorAll(
+	`a, button, p, 
+	.skills-container__content,
+	.nav-item-mode-switch,
+	.nav-item-lang`
+);
+
+elements.forEach(element => {
+	element.addEventListener('mouseover', function () {
+		if (element.matches('p')) {
+			cursor1.classList.add('expand-cursor');
+		} else {
+			cursors.forEach(cursor => {
+				// console.log(cursor);
+				cursor.classList.add('remove-cursor');
+			});
+		}
+	});
+});
+
+elements.forEach(element => {
+	element.addEventListener('mouseleave', function () {
+		cursors.forEach(cursor => {
+			if (element.matches('p')) {
+				cursor1.classList.remove('expand-cursor');
+			} else {
+				cursor.classList.remove('remove-cursor');
+			}
+		});
+	});
+});
+
+document.addEventListener('mousemove', e => {
 	const cursor1 = document.querySelector('.cursor1');
 	const cursor2 = document.querySelector('.cursor2');
-	cursor1.style.cssText = cursor2.style.cssText = `${'left:' + e.clientX + 'px; top: ' + e.clientY + 'px;'}`;
+	cursor1.style.cssText = cursor2.style.cssText = `${
+		'left:' + e.clientX + 'px; top: ' + e.clientY + 'px;'
+	}`;
 });
 
 const sunIcon = document.getElementById('sun');
@@ -54,9 +91,8 @@ function download(fileUrl, fileName) {
 	a.click();
 }
 
-
-document.querySelector("footer>small>span").innerText = new Date().getFullYear();
-
+document.querySelector('footer>small>span').innerText =
+	new Date().getFullYear();
 
 const selectors = document.querySelectorAll(
 	`.portfolio-container__project, 
@@ -65,17 +101,20 @@ const selectors = document.querySelectorAll(
 	.discription-wrapper`
 );
 
-const observer = new IntersectionObserver(enteries => {
-	enteries.forEach(entery => {
-		entery.target.classList.toggle('show', entery.isIntersecting);
-		if (entery.target.classList == 'lang-progress-bar show') {
-			// This function is declared in the .section/main.js file
-			animateProgressCircles();
-		}
-	})
-}, {
-	threshold: .3
-});
+const observer = new IntersectionObserver(
+	enteries => {
+		enteries.forEach(entery => {
+			entery.target.classList.toggle('show', entery.isIntersecting);
+			if (entery.target.classList == 'lang-progress-bar show') {
+				// This function is declared in the .section/main.js file
+				animateProgressCircles();
+			}
+		});
+	},
+	{
+		threshold: 0.3,
+	}
+);
 
 selectors.forEach(selector => {
 	observer.observe(selector);

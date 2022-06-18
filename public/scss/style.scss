@@ -70,6 +70,16 @@ i,
 	background-color:var(--color-text-icon);
 }
 
+.expand-cursor {
+	width: 100px;
+	height: 100px;
+}
+
+.remove-cursor {
+	width: 0;
+	height: 0;
+}
+
 @include media-breakpoint-down(lg) {
 	main {
 		padding: 0 1.7rem;
