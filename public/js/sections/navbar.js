@@ -22,4 +22,16 @@ const scrollingSpy = () => {
 		}
 	};
 };
+
+
+function changeLanguage(lang) {
+	if (lang === 'French') {
+		alert("Cette fonctionnalité sera bientôt disponible !");
+	} else if (lang === 'English') {
+		alert('This feature will be available soon !');
+	} else if (lang === 'Arabic') {
+		alert("! هذه الخاصية ستكون متاحة قريبًا ");
+	}
+}
+
 scrollingSpy();

@@ -54,12 +54,11 @@
                                 </button>
                         </li>
                         <li class="nav-item nav-item-lang">
-                            <select name="language">
-                                <option value="French">FR</option>
-                                <option value="English">EN</option>
-                                <option value="Arabic">AR</option>
+                            <select name="language" onchange="changeLanguage(this.value)">
+                                <option onclick="changeLanguage" value="French">FR</option>
+                                <option onclick="changeLanguage" value="English">EN</option>
+                                <option onclick="changeLanguage" value="Arabic">AR</option>
                             </select>
-                            <!-- <button class="py-0 rounded-3 btn-lang">EN</button> -->
                         </li>
                     </ul>
                 </div>
@@ -100,7 +99,7 @@
                                         class="display-2--description text-secondary">développeur web 💻</span>
                                 </splan>
                             </h1>
-                            <p class="intro-section__description mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nam maiores atque a at molestiae explicabo facere, commodi laudantium eius! Asperiores quae deserunt esse quibusdam corrupti deleniti ea veritatis perferendis cupiditate nulla et doloremque unde pariatur dolores atque, inventore ab!</p>
+                            <p class="intro-section__description mt-5">Développeur rigooreux et créatif. Curieux de nature et a toujours la soif d'apprendre de nouvelles choses. Passionné par le monde de la tech et en particulier le développement web. J'intéresse beaucoup aux petits détails et je suis quelqu'un qui aime les défits.</p>
                             <button class="intro-section__custom-btn fw-bold">Plus d'info <i
                                     class="fas fa-arrow-right p-2 text-white ms-1"></i></button>
                         </div>
