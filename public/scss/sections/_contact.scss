@@ -120,7 +120,7 @@
 				$left: auto,
 				$right: 0,
 				$top: auto,
-				$bottom: 0
+				$bottom: 10px
 			);
 			border-bottom: 2px solid;
 			border-right: 2px solid;
@@ -131,7 +131,8 @@
 			height: 40px !important;
 			position: absolute;
 			right: 60px;
-			bottom: 30px;
+			bottom: 35px;
+			z-index: 1;			
 		}
 	}
 	&__form-group {
