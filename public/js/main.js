@@ -4,10 +4,12 @@ const cursor1 = document.querySelector('.cursor1');
 const cursor2 = document.querySelector('.cursor2');
 const cursors = document.querySelectorAll('.cursor');
 const elements = document.querySelectorAll(
-	`a, button, p, 
+	` 
+	.contact-container__form-group,
 	.skills-container__content,
 	.nav-item-mode-switch,
-	.nav-item-lang`
+	.nav-item-lang,
+	a, button, p`
 );
 
 elements.forEach(element => {
@@ -16,7 +18,6 @@ elements.forEach(element => {
 			cursor1.classList.add('expand-cursor');
 		} else {
 			cursors.forEach(cursor => {
-				// console.log(cursor);
 				cursor.classList.add('remove-cursor');
 			});
 		}
