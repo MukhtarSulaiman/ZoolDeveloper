@@ -1,32 +1,36 @@
 {
-  "name": "zooldeveloper",
-  "version": "1.0.0",
-  "description": "A developer portfolio using bootstrap, sass and nodemailer for email messaging",
-  "main": "server.js",
-  "scripts": {
-    "compile:sass": "sass --watch public/scss:public/assets/css",
-    "dev": "nodemon server.js"
-  },
-  "keywords": [
-    "portfolio",
-    "building-portfolio",
-    "developer-portfolio",
-    "ZoolDeveloper"
-  ],
-  "author": "Mukhtar Sulaiman",
-  "license": "MIT",
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.1.1",
-    "autoprefixer": "^10.4.4",
-    "bootstrap": "^5.1.3",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "googleapis": "^100.0.0",
-    "nodemailer": "^6.7.5",
-    "postcss-cli": "^9.1.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.16",
-    "sass": "^1.50.1"
-  }
+	"name": "zooldeveloper",
+	"version": "1.0.0",
+	"description": "A developer portfolio using bootstrap, sass and nodemailer for email messaging",
+	"main": "server.js",
+	"engines": {
+		"node": "16.13.1"
+	},
+	"scripts": {
+		"start": "nodemon server.js",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"compile:sass": "sass --watch public/scss:public/assets/css"
+	},
+	"keywords": [
+		"portfolio",
+		"building-portfolio",
+		"developer-portfolio",
+		"ZoolDeveloper"
+	],
+	"author": "Mukhtar Sulaiman",
+	"license": "MIT",
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^6.1.1",
+		"autoprefixer": "^10.4.4",
+		"bootstrap": "^5.1.3",
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1",
+		"googleapis": "^100.0.0",
+		"nodemailer": "^6.7.5",
+		"postcss-cli": "^9.1.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.16",
+		"sass": "^1.50.1"
+	}
 }
