@@ -132,13 +132,14 @@
 			position: absolute;
 			right: 60px;
 			bottom: 35px;
-			z-index: 1;			
+			z-index: 1;
 		}
 	}
 	&__form-group {
 		width: 100%;
 		height: 50px;
 		margin-bottom: 1rem;
+		position: relative;
 
 		label {
 			display: block;
@@ -169,6 +170,26 @@
 				min-height: 120px;
 			}
 		}
+		small {
+			display: none;
+		}
+		small.error {
+			display: initial;
+			position: absolute;
+			right: 0;
+			bottom: 2px;
+			color: $primary;
+		}
+		small.succes {
+			display: none !important;
+		}
+		.textarea-error-message {
+			bottom: -60px !important;
+			transition: bottom 400ms;
+		}
+		textarea:focus + .textarea-error-message {
+			bottom: -90px !important;
+		}
 	}
 }
 
@@ -197,7 +218,6 @@
 }
 
 @include media-breakpoint-down(md) {
-	
 	.discription-wrapper {
 		top: 70px !important;
 	}

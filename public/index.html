@@ -455,23 +455,27 @@
                             </div>
                         </div>
                     </div>
-                    <form class="col-12 col-md-6 contact-container__form-contact">
+                    <form class="col-12 col-md-6 contact-container__form-contact" novalidate>
                         <!-- {{responseMessage}} -->
                         <div class="contact-container__form-group">
                             <label for="fullName">Nom</label>
                             <input type="text" id="fullName" placeholder="David ALLAIN">
+                            <small></small>
                         </div>
                         <div class="contact-container__form-group">
                             <label for="email">Email</label>
                             <input type="email" id="email" placeholder="example@gmail.com">
+                            <small></small>
                         </div>
                         <div class="contact-container__form-group">
                             <label for="subject">Objet</label>
                             <input type="text" id="subject" placeholder="Votre object">
+                            <small></small>
                         </div>
                         <div class="contact-container__form-group">
                             <label for="message">Message</label>
                             <textarea id="message" placeholder="Ecrivez votre message..."></textarea>
+                            <small class="textarea-error-message"></small>
                         </div>
                         <button type="submit">Envoyer</button>
                     </form>
