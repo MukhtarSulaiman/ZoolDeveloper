@@ -1,27 +1,25 @@
 /** @format */
+const formContact = document.querySelector('.contact-container__form-contact');
+
 let fullName = document.getElementById('fullName');
 let email = document.getElementById('email');
 let subject = document.getElementById('subject');
 let message = document.getElementById('message');
 
-document
-	.querySelector('.contact-container__form-contact')
-	.addEventListener('submit', e => {
-		e.preventDefault();
+formContact.addEventListener('submit', e => {
+	e.preventDefault();
 
-		checkInputs();
-	});
+	checkInputs();
+});
 
 function checkInputs() {
-
 	const emptyErrorMsg = 'Champ est requis !';
 	const formData = {
 		fullNameValue: fullName.value.trim(),
 		emailValue: email.value.trim(),
 		subjectValue: subject.value.trim(),
-		messageValue: message.value.trim()
-	}	
-	
+		messageValue: message.value.trim(),
+	};
 
 	if (formData.fullNameValue === '') {
 		setErrorFor(fullName, emptyErrorMsg);
@@ -96,7 +94,8 @@ function isEmail(email) {
 }
 
 function getFormInputValues(formData) {
-	
+	formContact.firstElementChild.classList.add('loader');
+
 	let xhr = new XMLHttpRequest();
 	xhr.open('POST', '/');
 	xhr.setRequestHeader('Content-type', 'application/json');
@@ -107,7 +106,8 @@ function getFormInputValues(formData) {
 			email.value = '';
 			subject.value = '';
 			message.value = '';
-			console.log('Worked');
+
+			formContact.firstElementChild.classList.remove('loader');
 		} else {
 			alert(xhr.responseText);
 		}
