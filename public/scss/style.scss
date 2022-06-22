@@ -67,7 +67,7 @@ i,
 .cursor2 {
 	width: 7px;
 	height: 7px;
-	background-color:var(--color-text-icon);
+	background-color: var(--color-text-icon);
 }
 
 .expand-cursor {
@@ -78,6 +78,26 @@ i,
 .remove-cursor {
 	width: 0;
 	height: 0;
+}
+
+.alert-message {
+	display: none;
+}
+
+.show-alert-message {
+	display: block !important;
+	position: fixed;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: auto;
+	height: auto;
+	padding: 0.7rem;
+	color: $white;
+	background: rgb($secondary, 0.8);
+	text-align: center;
+	border-radius: 10px;
+	z-index: 3;
 }
 
 @include media-breakpoint-down(lg) {

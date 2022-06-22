@@ -25,13 +25,20 @@ const scrollingSpy = () => {
 
 
 function changeLanguage(lang) {
+	const alertMessage = document.querySelector('.alert-message');
+	alertMessage.classList.add('show-alert-message');
+
 	if (lang === 'French') {
-		alert("Cette fonctionnalité sera bientôt disponible !");
+		alertMessage.innerHTML = 'Cette fonctionnalité sera bientôt disponible !';
 	} else if (lang === 'English') {
-		alert('This feature will be available soon !');
+		alertMessage.innerHTML= 'This feature will be available soon !';
 	} else if (lang === 'Arabic') {
-		alert("هذه الخاصية ستكون متاحة قريبًا !");
+		alertMessage.innerText = "! هذه الخاصية ستكون متاحة قريبًا";
 	}
+
+	setTimeout(() => {
+		alertMessage.classList.remove('show-alert-message');
+	}, 6000);
 }
 
 scrollingSpy();

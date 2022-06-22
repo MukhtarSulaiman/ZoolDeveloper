@@ -8,7 +8,6 @@ let message = document.getElementById('message');
 
 formContact.addEventListener('submit', e => {
 	e.preventDefault();
-
 	checkInputs();
 });
 
@@ -42,7 +41,7 @@ function checkInputs() {
 	if (formData.subjectValue === '') {
 		setErrorFor(subject, emptyErrorMsg);
 	} else if (formData.subjectValue.length < 3) {
-		setErrorFor(subject, 'Minimum 3 Caractères');
+		setErrorFor(subject, 'Minimum 3 Caractères !');
 	} else {
 		setSuccessFor(subject);
 	}
@@ -101,13 +100,18 @@ function getFormInputValues(formData) {
 	xhr.setRequestHeader('Content-type', 'application/json');
 	xhr.onload = function () {
 		if (xhr.status == 200) {
-			alert(xhr.responseText);
+			const alertMessage2 = document.querySelector('.alert-message');
+			alertMessage2.classList.add('show-alert-message');
+			alertMessage2.innerHTML = xhr.responseText;
 			fullName.value = '';
 			email.value = '';
 			subject.value = '';
 			message.value = '';
 
 			formContact.firstElementChild.classList.remove('loader');
+			setTimeout(() => {
+				alertMessage2.classList.remove('show-alert-message');
+			}, 6000);
 		} else {
 			alert(xhr.responseText);
 		}
