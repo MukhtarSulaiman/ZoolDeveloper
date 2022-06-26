@@ -7,7 +7,7 @@
 		"node": "16.13.1"
 	},
 	"scripts": {
-		"start": "nodemon server.js",
+		"start": "node server.js",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"compile:sass": "sass --watch public/scss:public/assets/css"
 	},

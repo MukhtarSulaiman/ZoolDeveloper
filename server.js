@@ -8,13 +8,17 @@ require('dotenv').config({ path: '.env' });
 const app = express();
 const PORT = process.env.PORT || 500;
 
-app.use(express.static('public'));
 app.use(express.json());
 app.use(
 	express.urlencoded({
 		extended: false,
 	})
 );
+app.use(express.static('public'));
+app.get('*', (req, res) => {
+	res.sendFile(__dirname + '/public/index.html');
+});
+
 
 const OAuth2Client = new google.auth.OAuth2(
 	process.env.CLIENT_ID,
@@ -23,9 +27,6 @@ const OAuth2Client = new google.auth.OAuth2(
 );
 OAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
 
-app.get('/', (req, res) => {
-	res.sendFile(__dirname + '/public/index.html');
-});
 
 app.post('/', (req, res) => {
 	console.log(req.body)
