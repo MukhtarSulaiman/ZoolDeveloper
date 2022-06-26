@@ -102,6 +102,9 @@ i,
 
 @include media-breakpoint-down(lg) {
 	main {
-		padding: 0 1.7rem;
+		padding: 0 1.5rem;
+	}
+	.cursor1, .cursor2 {
+		display: none !important;
 	}
 }

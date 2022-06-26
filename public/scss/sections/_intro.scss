@@ -6,7 +6,7 @@
 @use '../components/animations' as *;
 
 #intro {
-     scroll-margin-top: 7rem;
+	scroll-margin-top: 7rem;
 }
 
 .intro-section {
@@ -14,7 +14,6 @@
 	&__intros {
 		padding-left: 150px;
 	}
-
 	&__network {
 		padding-left: 22px;
 		left: 0;
@@ -169,7 +168,7 @@
 				}
 			}
 		}
-		
+
 		:nth-child(3) {
 			@include animation(2s) {
 				0% {
@@ -201,7 +200,7 @@
 		}
 
 		&__network {
-			left: 92% !important;
+			left: 91% !important;
 		}
 		&__custom-btn {
 			position: static;
@@ -214,8 +213,11 @@
 	}
 
 	@include media-breakpoint-down(md) {
+		&__intros {
+			padding-left: 20px !important;
+		}
 		&__network {
-			left: 89.5% !important;
+			left: 88% !important;
 		}
 		&__scroll-container {
 			margin-top: 3rem !important;
@@ -223,8 +225,9 @@
 	}
 
 	@include media-breakpoint-down(sm) {
-		margin-left: 0.6rem;
-		margin-right: 0.6rem;
+		&__intros {
+			padding-left: 5px !important;
+		}
 		&__description {
 			width: 100% !important;
 		}
