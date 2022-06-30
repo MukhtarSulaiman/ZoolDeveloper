@@ -20,7 +20,7 @@
 		opacity: 0;
 		position: relative;
 		@include contact-and-network-icon(7px);
-		@include animation(2s, 2s) {
+		@include animation(2s, 1.7s) {
 			0% {
 				opacity: 0;
 				transform: translateX(-118px);
@@ -50,23 +50,6 @@
 
 		&::after {
 			bottom: -30px;
-		}
-	}
-
-	&__greeting {
-		opacity: 0;
-		@include animation(2s) {
-			0% {
-				opacity: 0;
-				transform: translateY(-150px);
-			}
-			20% {
-				opacity: 0.5;
-			}
-			100% {
-				opacity: 1;
-				transform: translateY(0px);
-			}
 		}
 	}
 
@@ -213,15 +196,34 @@
 	}
 
 	@include media-breakpoint-down(md) {
+		margin-top: 4rem;
 		&__intros {
 			padding-left: 20px !important;
 		}
 		&__network {
 			left: 88% !important;
+			height: 50% !important;
+			bottom: 0;
 		}
 		&__scroll-container {
 			margin-top: 3rem !important;
 		}
+		&__img {
+		transform: scale(1);
+		@include animation(2s) {
+			0% {
+				opacity: 0;
+				transform: scale(.2);
+			}
+			10% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+				transform: scale(1.1);
+			}
+		}
+	}
 	}
 
 	@include media-breakpoint-down(sm) {

@@ -10122,12 +10122,12 @@ h2 {
 }
 .skills-container__content:hover::after {
   background-color: #000;
-  animation-name: u8u5mno;
+  animation-name: u8u6ggh;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u5mno {
+@keyframes u8u6ggh {
   0% {
     opacity: 0;
     bottom: 50px;
@@ -10285,12 +10285,12 @@ h2 {
   cursor: pointer;
   border-radius: 5px;
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
-  animation-name: u8u5moe;
+  animation-name: u8u6gh7;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u5moe {
+@keyframes u8u6gh7 {
   0% {
     opacity: 0;
   }
@@ -10344,10 +10344,10 @@ h2 {
   left: 0;
   opacity: 0;
   position: relative;
-  animation-name: u8u5mos;
+  animation-name: u8u6gh8;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  animation-delay: 2s;
+  animation-delay: 1.7s;
 }
 .intro-section__network .social-icon-wrapper {
   width: 35px;
@@ -10374,7 +10374,7 @@ h2 {
   align-items: center;
   flex-direction: row;
 }
-@keyframes u8u5mos {
+@keyframes u8u6gh8 {
   0% {
     opacity: 0;
     transform: translateX(-118px);
@@ -10401,33 +10401,13 @@ h2 {
 .intro-section__network::after {
   bottom: -30px;
 }
-.intro-section__greeting {
-  opacity: 0;
-  animation-name: u8u5mpn;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-delay: 0s;
-}
-@keyframes u8u5mpn {
-  0% {
-    opacity: 0;
-    transform: translateY(-150px);
-  }
-  20% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
 .intro-section__main-heading {
-  animation-name: u8u5mpv;
+  animation-name: u8u6gi0;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u5mpv {
+@keyframes u8u6gi0 {
   0% {
     opacity: 0;
     transform: translateX(-150px);
@@ -10441,12 +10421,12 @@ h2 {
   }
 }
 .intro-section__description {
-  animation-name: u8u5mq3;
+  animation-name: u8u6gi1;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u5mq3 {
+@keyframes u8u6gi1 {
   0% {
     opacity: 0;
     transform: translateX(150px);
@@ -10469,7 +10449,7 @@ h2 {
   font-weight: bold;
   border: none;
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
-  animation-name: u8u5mq5;
+  animation-name: u8u6giz;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 2s;
@@ -10478,7 +10458,7 @@ h2 {
   background-image: linear-gradient(to right, rgba(255, 111, 97, 0.9), rgba(190, 46, 115, 0.9));
   transition: background-image 500ms;
 }
-@keyframes u8u5mq5 {
+@keyframes u8u6giz {
   0% {
     opacity: 0;
     transform: translateY(150px);
@@ -10497,12 +10477,12 @@ h2 {
 }
 .intro-section__img {
   transform: scale(1);
-  animation-name: u8u5mq7;
+  animation-name: u8u6gjv;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u5mq7 {
+@keyframes u8u6gjv {
   0% {
     opacity: 0;
     transform: translateX(50px);
@@ -10531,12 +10511,12 @@ h2 {
   animation-iteration-count: infinite;
 }
 .intro-section__scroll-container :nth-child(2) {
-  animation-name: u8u5mqk;
+  animation-name: u8u6gjz;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 200ms;
 }
-@keyframes u8u5mqk {
+@keyframes u8u6gjz {
   0% {
     transform: translateY(-15px) rotate(-45deg);
     opacity: 1;
@@ -10547,12 +10527,12 @@ h2 {
   }
 }
 .intro-section__scroll-container :nth-child(3) {
-  animation-name: u8u5mqq;
+  animation-name: u8u6gkk;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u5mqq {
+@keyframes u8u6gkk {
   0% {
     transform: translateY(-30px) rotate(-45deg);
     opacity: 1;
@@ -10587,14 +10567,39 @@ h2 {
   }
 }
 @media (max-width: 767.98px) {
+  .intro-section {
+    margin-top: 4rem;
+  }
   .intro-section__intros {
     padding-left: 20px !important;
   }
   .intro-section__network {
     left: 88% !important;
+    height: 50% !important;
+    bottom: 0;
   }
   .intro-section__scroll-container {
     margin-top: 3rem !important;
+  }
+  .intro-section__img {
+    transform: scale(1);
+    animation-name: u8u6gkx;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+  }
+  @keyframes u8u6gkx {
+    0% {
+      opacity: 0;
+      transform: scale(0.2);
+    }
+    10% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
   }
 }
 @media (max-width: 575.98px) {
@@ -10777,12 +10782,12 @@ h2 {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  animation-name: u8u5mra;
+  animation-name: u8u6glv;
   animation-duration: 800ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u5mra {
+@keyframes u8u6glv {
   0% {
     top: 100%;
   }
@@ -10918,12 +10923,12 @@ h2 {
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
 }
 .education-container__education:hover::before {
-  animation-name: u8u5mrj;
+  animation-name: u8u6glx;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u5mrj {
+@keyframes u8u6glx {
   0% {
     width: 15%;
   }
@@ -11022,12 +11027,12 @@ h2 {
   bottom: 7px;
   top: 9px;
   right: auto;
-  animation-name: u8u5mrv;
+  animation-name: u8u6gm9;
   animation-duration: 1.8s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u5mrv {
+@keyframes u8u6gm9 {
   0% {
     width: 0px;
   }
@@ -11044,12 +11049,12 @@ h2 {
   bottom: 7px;
   top: 48.5px;
   right: auto;
-  animation-name: u8u5msr;
+  animation-name: u8u6gmx;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u5msr {
+@keyframes u8u6gmx {
   0% {
     width: 0px;
   }
@@ -11066,12 +11071,12 @@ h2 {
   bottom: 6px;
   top: auto;
   right: auto;
-  animation-name: u8u5mtd;
+  animation-name: u8u6gn2;
   animation-duration: 2.2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u5mtd {
+@keyframes u8u6gn2 {
   0% {
     width: 0px;
   }
@@ -11132,12 +11137,12 @@ h2 {
     display: none;
   }
   .language-container__languages :nth-child(1)::before {
-    animation-name: u8u5mtu;
+    animation-name: u8u6gnm;
     animation-duration: 1.8s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes u8u5mtu {
+  @keyframes u8u6gnm {
     0% {
       width: 0px;
     }
@@ -11146,12 +11151,12 @@ h2 {
     }
   }
   .language-container__languages :nth-child(2)::before {
-    animation-name: u8u5muk;
+    animation-name: u8u6gnq;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes u8u5muk {
+  @keyframes u8u6gnq {
     0% {
       width: 0px;
     }
@@ -11160,12 +11165,12 @@ h2 {
     }
   }
   .language-container__languages :nth-child(3)::before {
-    animation-name: u8u5mva;
+    animation-name: u8u6goj;
     animation-duration: 2.2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes u8u5mva {
+  @keyframes u8u6goj {
     0% {
       width: 0px;
     }
@@ -11318,12 +11323,12 @@ h2 {
   margin-left: 2rem;
 }
 .contact-container__content-group:hover i {
-  animation-name: u8u5mvq;
+  animation-name: u8u6gp2;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u5mvq {
+@keyframes u8u6gp2 {
   0% {
     transform: rotate(0deg);
   }
@@ -11398,12 +11403,12 @@ h2 {
   border-bottom-color: #BE2E73;
   z-index: 2;
   animation-iteration-count: infinite !important;
-  animation-name: u8u5mw2;
+  animation-name: u8u6gpb;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u5mw2 {
+@keyframes u8u6gpb {
   0% {
     transform: rotate(0deg);
   }
