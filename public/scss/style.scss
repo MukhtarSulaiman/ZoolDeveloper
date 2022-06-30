@@ -18,6 +18,8 @@
 @use './sections/contact';
 @use './sections/footer';
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,500&display=swap');
+
 :root {
 	--color-page-background: #{$dark};
 	--color-text-icon: #{$white};
@@ -35,10 +37,11 @@ html {
 body {
 	background-color: var(--color-page-background);
 	color: var(--color-text-icon);
+	font-family: 'Raleway', sans-serif;
 }
 
 main {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 h1,
@@ -53,7 +56,7 @@ i,
 	position: fixed;
 	border-radius: 50%;
 	z-index: 10;
-	transition: .21s;
+	transition: 0.21s;
 	pointer-events: none;
 	transform: translate(-50%, -50%);
 }
@@ -104,7 +107,8 @@ i,
 	main {
 		padding: 0 1.5rem;
 	}
-	.cursor1, .cursor2 {
+	.cursor1,
+	.cursor2 {
 		display: none !important;
 	}
 }

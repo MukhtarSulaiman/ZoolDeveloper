@@ -1,6 +1,10 @@
 @use '../custom' as *;
 @use '../components/animations' as *;
 
+h2, h3 {
+    font-family: 'Lora', serif;
+}
+
 h2 {
     margin-top: 15rem;
     margin-bottom: 2rem;
