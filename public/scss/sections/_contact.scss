@@ -207,18 +207,18 @@
 			display: initial;
 			position: absolute;
 			right: 0;
-			bottom: 2px;
+			bottom: -22px;
 			color: $primary;
 		}
 		small.succes {
 			display: none !important;
 		}
 		.textarea-error-message {
-			bottom: -60px !important;
-			transition: bottom 400ms;
+			top: 110px !important;
+			transition: top 400ms;
 		}
 		textarea:focus + .textarea-error-message {
-			bottom: -90px !important;
+			top: 141px !important;
 		}
 	}
 }

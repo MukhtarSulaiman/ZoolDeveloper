@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,500&display=swap");
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10104,6 +10106,10 @@ textarea.form-control-lg {
   }
 }
 /** @format */
+h2, h3 {
+  font-family: "Lora", serif;
+}
+
 h2 {
   margin-top: 15rem;
   margin-bottom: 2rem;
@@ -10122,12 +10128,12 @@ h2 {
 }
 .skills-container__content:hover::after {
   background-color: #000;
-  animation-name: u8u6ggh;
+  animation-name: u8u7hsz;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u6ggh {
+@keyframes u8u7hsz {
   0% {
     opacity: 0;
     bottom: 50px;
@@ -10285,12 +10291,12 @@ h2 {
   cursor: pointer;
   border-radius: 5px;
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
-  animation-name: u8u6gh7;
+  animation-name: u8u7ht0;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u6gh7 {
+@keyframes u8u7ht0 {
   0% {
     opacity: 0;
   }
@@ -10344,7 +10350,7 @@ h2 {
   left: 0;
   opacity: 0;
   position: relative;
-  animation-name: u8u6gh8;
+  animation-name: u8u7htv;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 1.7s;
@@ -10374,7 +10380,7 @@ h2 {
   align-items: center;
   flex-direction: row;
 }
-@keyframes u8u6gh8 {
+@keyframes u8u7htv {
   0% {
     opacity: 0;
     transform: translateX(-118px);
@@ -10402,12 +10408,12 @@ h2 {
   bottom: -30px;
 }
 .intro-section__main-heading {
-  animation-name: u8u6gi0;
+  animation-name: u8u7huf;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u6gi0 {
+@keyframes u8u7huf {
   0% {
     opacity: 0;
     transform: translateX(-150px);
@@ -10421,12 +10427,12 @@ h2 {
   }
 }
 .intro-section__description {
-  animation-name: u8u6gi1;
+  animation-name: u8u7hup;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u6gi1 {
+@keyframes u8u7hup {
   0% {
     opacity: 0;
     transform: translateX(150px);
@@ -10449,7 +10455,7 @@ h2 {
   font-weight: bold;
   border: none;
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
-  animation-name: u8u6giz;
+  animation-name: u8u7hv4;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 2s;
@@ -10458,7 +10464,7 @@ h2 {
   background-image: linear-gradient(to right, rgba(255, 111, 97, 0.9), rgba(190, 46, 115, 0.9));
   transition: background-image 500ms;
 }
-@keyframes u8u6giz {
+@keyframes u8u7hv4 {
   0% {
     opacity: 0;
     transform: translateY(150px);
@@ -10477,12 +10483,12 @@ h2 {
 }
 .intro-section__img {
   transform: scale(1);
-  animation-name: u8u6gjv;
+  animation-name: u8u7hvj;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u6gjv {
+@keyframes u8u7hvj {
   0% {
     opacity: 0;
     transform: translateX(50px);
@@ -10511,12 +10517,12 @@ h2 {
   animation-iteration-count: infinite;
 }
 .intro-section__scroll-container :nth-child(2) {
-  animation-name: u8u6gjz;
+  animation-name: u8u7hwf;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 200ms;
 }
-@keyframes u8u6gjz {
+@keyframes u8u7hwf {
   0% {
     transform: translateY(-15px) rotate(-45deg);
     opacity: 1;
@@ -10527,12 +10533,12 @@ h2 {
   }
 }
 .intro-section__scroll-container :nth-child(3) {
-  animation-name: u8u6gkk;
+  animation-name: u8u7hwy;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u6gkk {
+@keyframes u8u7hwy {
   0% {
     transform: translateY(-30px) rotate(-45deg);
     opacity: 1;
@@ -10583,12 +10589,12 @@ h2 {
   }
   .intro-section__img {
     transform: scale(1);
-    animation-name: u8u6gkx;
+    animation-name: u8u7hxd;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes u8u6gkx {
+  @keyframes u8u7hxd {
     0% {
       opacity: 0;
       transform: scale(0.2);
@@ -10782,12 +10788,12 @@ h2 {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  animation-name: u8u6glv;
+  animation-name: u8u7hxz;
   animation-duration: 800ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u6glv {
+@keyframes u8u7hxz {
   0% {
     top: 100%;
   }
@@ -10923,12 +10929,12 @@ h2 {
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
 }
 .education-container__education:hover::before {
-  animation-name: u8u6glx;
+  animation-name: u8u7hyc;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u6glx {
+@keyframes u8u7hyc {
   0% {
     width: 15%;
   }
@@ -11027,12 +11033,12 @@ h2 {
   bottom: 7px;
   top: 9px;
   right: auto;
-  animation-name: u8u6gm9;
+  animation-name: u8u7hz8;
   animation-duration: 1.8s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u6gm9 {
+@keyframes u8u7hz8 {
   0% {
     width: 0px;
   }
@@ -11049,12 +11055,12 @@ h2 {
   bottom: 7px;
   top: 48.5px;
   right: auto;
-  animation-name: u8u6gmx;
+  animation-name: u8u7hzv;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u6gmx {
+@keyframes u8u7hzv {
   0% {
     width: 0px;
   }
@@ -11071,12 +11077,12 @@ h2 {
   bottom: 6px;
   top: auto;
   right: auto;
-  animation-name: u8u6gn2;
+  animation-name: u8u7i08;
   animation-duration: 2.2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u6gn2 {
+@keyframes u8u7i08 {
   0% {
     width: 0px;
   }
@@ -11137,12 +11143,12 @@ h2 {
     display: none;
   }
   .language-container__languages :nth-child(1)::before {
-    animation-name: u8u6gnm;
+    animation-name: u8u7i0m;
     animation-duration: 1.8s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes u8u6gnm {
+  @keyframes u8u7i0m {
     0% {
       width: 0px;
     }
@@ -11151,12 +11157,12 @@ h2 {
     }
   }
   .language-container__languages :nth-child(2)::before {
-    animation-name: u8u6gnq;
+    animation-name: u8u7i1c;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes u8u6gnq {
+  @keyframes u8u7i1c {
     0% {
       width: 0px;
     }
@@ -11165,12 +11171,12 @@ h2 {
     }
   }
   .language-container__languages :nth-child(3)::before {
-    animation-name: u8u6goj;
+    animation-name: u8u7i1d;
     animation-duration: 2.2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes u8u6goj {
+  @keyframes u8u7i1d {
     0% {
       width: 0px;
     }
@@ -11323,12 +11329,12 @@ h2 {
   margin-left: 2rem;
 }
 .contact-container__content-group:hover i {
-  animation-name: u8u6gp2;
+  animation-name: u8u7i2a;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u6gp2 {
+@keyframes u8u7i2a {
   0% {
     transform: rotate(0deg);
   }
@@ -11403,12 +11409,12 @@ h2 {
   border-bottom-color: #BE2E73;
   z-index: 2;
   animation-iteration-count: infinite !important;
-  animation-name: u8u6gpb;
+  animation-name: u8u7i2m;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes u8u6gpb {
+@keyframes u8u7i2m {
   0% {
     transform: rotate(0deg);
   }
@@ -11473,18 +11479,18 @@ h2 {
   display: initial;
   position: absolute;
   right: 0;
-  bottom: 2px;
+  bottom: -22px;
   color: #FF6F61;
 }
 .contact-container__form-group small.succes {
   display: none !important;
 }
 .contact-container__form-group .textarea-error-message {
-  bottom: -60px !important;
-  transition: bottom 400ms;
+  top: 110px !important;
+  transition: top 400ms;
 }
 .contact-container__form-group textarea:focus + .textarea-error-message {
-  bottom: -90px !important;
+  top: 141px !important;
 }
 
 .download {
@@ -11541,6 +11547,7 @@ h2 {
   }
 }
 footer {
+  font-family: "Lora", serif;
   width: 100%;
   height: 80px;
   margin-top: 4rem;
@@ -11555,7 +11562,6 @@ footer small {
   font-size: 1.1rem;
 }
 
-/** @format */
 :root {
   --color-page-background: #1A2421;
   --color-text-icon: #fff;
@@ -11573,6 +11579,7 @@ html {
 body {
   background-color: var(--color-page-background);
   color: var(--color-text-icon);
+  font-family: "Raleway", sans-serif;
 }
 
 main {
@@ -11642,7 +11649,8 @@ i,
   main {
     padding: 0 1.5rem;
   }
-  .cursor1, .cursor2 {
+  .cursor1,
+.cursor2 {
     display: none !important;
   }
 }
