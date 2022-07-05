@@ -10,7 +10,7 @@
 }
 
 .intro-section {
-	margin-top: 12rem;
+	margin-top: 9rem;
 	&__intros {
 		padding-left: 150px;
 	}
@@ -18,7 +18,6 @@
 		padding-left: 22px;
 		left: 0;
 		opacity: 0;
-		position: relative;
 		@include contact-and-network-icon(7px);
 		@include animation(2s, 1.7s) {
 			0% {
@@ -70,6 +69,8 @@
 	}
 
 	&__description {
+		font-weight: 400;
+		
 		@include animation(2s) {
 			0% {
 				opacity: 0;
@@ -83,6 +84,20 @@
 				transform: translateY(0px);
 			}
 		}
+	}
+
+	&__additional-description {
+		opacity: 0;
+		height: 0;
+		transition: all 400ms;
+		font-size: .9rem;
+
+	}
+
+	&__description-container.active &__additional-description{
+		display: block;
+		height: 160px;
+		opacity: .8;
 	}
 
 	&__custom-btn {
@@ -102,11 +117,12 @@
 				transform: translateY(0px);
 			}
 		}
-
 		i {
 			border: 1px solid $white;
 			border-radius: 50%;
+			transition: all 1s;
 		}
+
 	}
 
 	&__img {
@@ -129,7 +145,7 @@
 	&__scroll-container {
 		@include flexbox($flex-direction: column);
 		margin-top: 4rem;
-
+		
 		.arrow {
 			width: 17px;
 			height: 17px;
@@ -166,18 +182,21 @@
 		}
 	}
 
+	@include media-breakpoint-down(xxl) {
+		&__additional-description {
+			width: 70vw !important;
+		}		
+	}
+
 	@include media-breakpoint-down(xl) {
-		&__custom-btn {
-			position: absolute;
-			bottom: 20px;
-			right: 130px;
-		}
+
 		&__scroll-container {
 			margin-top: 1rem !important;
 		}
 	}
 
 	@include media-breakpoint-down(lg) {
+		
 		&__intros {
 			padding-left: 20px !important;
 		}
@@ -185,6 +204,11 @@
 		&__network {
 			left: 91% !important;
 		}
+
+		&__additional-description {
+			width: 60vw !important;
+		}
+
 		&__custom-btn {
 			position: static;
 		}
@@ -200,14 +224,22 @@
 		&__intros {
 			padding-left: 20px !important;
 		}
+
 		&__network {
 			left: 88% !important;
 			height: 50% !important;
 			bottom: 0;
 		}
+
+		&__description-container.active &__additional-description {
+			width: 90% !important;
+			
+		}
+
 		&__scroll-container {
 			margin-top: 3rem !important;
 		}
+
 		&__img {
 		transform: scale(1);
 		@include animation(2s) {
@@ -230,8 +262,21 @@
 		&__intros {
 			padding-left: 5px !important;
 		}
+
 		&__description {
 			width: 100% !important;
+		}
+
+		&__description-container.active &__additional-description {
+			width: 90% !important;
+			height: 220px !important;
+			margin: 0 auto;
+		}
+	}
+
+	@media (max-width: 400px) {
+		&__description-container.active &__additional-description {
+			 height: 285px !important;
 		}
 	}
 }
