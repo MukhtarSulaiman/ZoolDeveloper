@@ -70,7 +70,7 @@
 
 	&__description {
 		font-weight: 400;
-		
+
 		@include animation(2s) {
 			0% {
 				opacity: 0;
@@ -90,20 +90,19 @@
 		opacity: 0;
 		height: 0;
 		transition: all 400ms;
-		font-size: .9rem;
-
+		font-size: 0.9rem;
 	}
 
-	&__description-container.active &__additional-description{
+	&__description-container.active &__additional-description {
 		display: block;
 		height: 160px;
-		opacity: .8;
+		opacity: 0.8;
 	}
 
 	&__custom-btn {
 		border: none;
 		opacity: 0;
-		@include custom-btn;
+		@include custom-btn(161px);
 		@include animation(2s, 2s) {
 			0% {
 				opacity: 0;
@@ -122,7 +121,6 @@
 			border-radius: 50%;
 			transition: all 1s;
 		}
-
 	}
 
 	&__img {
@@ -145,7 +143,7 @@
 	&__scroll-container {
 		@include flexbox($flex-direction: column);
 		margin-top: 4rem;
-		
+
 		.arrow {
 			width: 17px;
 			height: 17px;
@@ -185,18 +183,17 @@
 	@include media-breakpoint-down(xxl) {
 		&__additional-description {
 			width: 70vw !important;
-		}		
+			margin-bottom: 0 !important;
+		}
 	}
 
 	@include media-breakpoint-down(xl) {
-
 		&__scroll-container {
 			margin-top: 1rem !important;
 		}
 	}
 
 	@include media-breakpoint-down(lg) {
-		
 		&__intros {
 			padding-left: 20px !important;
 		}
@@ -233,7 +230,6 @@
 
 		&__description-container.active &__additional-description {
 			width: 90% !important;
-			
 		}
 
 		&__scroll-container {
@@ -241,21 +237,21 @@
 		}
 
 		&__img {
-		transform: scale(1);
-		@include animation(2s) {
-			0% {
-				opacity: 0;
-				transform: scale(.2);
-			}
-			10% {
-				opacity: 0;
-			}
-			100% {
-				opacity: 1;
-				transform: scale(1.1);
+			transform: scale(1);
+			@include animation(2s) {
+				0% {
+					opacity: 0;
+					transform: scale(0.2);
+				}
+				10% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+					transform: scale(1.1);
+				}
 			}
 		}
-	}
 	}
 
 	@include media-breakpoint-down(sm) {
@@ -276,7 +272,7 @@
 
 	@media (max-width: 400px) {
 		&__description-container.active &__additional-description {
-			 height: 285px !important;
+			height: 285px !important;
 		}
 	}
 }

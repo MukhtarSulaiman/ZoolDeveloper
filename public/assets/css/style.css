@@ -10128,12 +10128,12 @@ h2 {
 }
 .skills-container__content:hover::after {
   background-color: #000;
-  animation-name: umw5zzr;
+  animation-name: umw6v08;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw5zzr {
+@keyframes umw6v08 {
   0% {
     opacity: 0;
     bottom: 50px;
@@ -10291,12 +10291,12 @@ h2 {
   cursor: pointer;
   border-radius: 5px;
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
-  animation-name: umw600o;
+  animation-name: umw6v14;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw600o {
+@keyframes umw6v14 {
   0% {
     opacity: 0;
   }
@@ -10349,7 +10349,7 @@ h2 {
   padding-left: 22px;
   left: 0;
   opacity: 0;
-  animation-name: umw601l;
+  animation-name: umw6v20;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 1.7s;
@@ -10379,7 +10379,7 @@ h2 {
   align-items: center;
   flex-direction: row;
 }
-@keyframes umw601l {
+@keyframes umw6v20 {
   0% {
     opacity: 0;
     transform: translateX(-118px);
@@ -10407,12 +10407,12 @@ h2 {
   bottom: -30px;
 }
 .intro-section__main-heading {
-  animation-name: umw602c;
+  animation-name: umw6v2y;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw602c {
+@keyframes umw6v2y {
   0% {
     opacity: 0;
     transform: translateX(-150px);
@@ -10427,12 +10427,12 @@ h2 {
 }
 .intro-section__description {
   font-weight: 400;
-  animation-name: umw602h;
+  animation-name: umw6v3n;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw602h {
+@keyframes umw6v3n {
   0% {
     opacity: 0;
     transform: translateX(150px);
@@ -10459,14 +10459,14 @@ h2 {
 .intro-section__custom-btn {
   border: none;
   opacity: 0;
-  width: 160px;
+  width: 161px;
   height: 50px;
   border-radius: 15px;
   color: #fff !important;
   font-weight: bold;
   border: none;
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
-  animation-name: umw602o;
+  animation-name: umw6v3t;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 2s;
@@ -10475,7 +10475,7 @@ h2 {
   background-image: linear-gradient(to right, rgba(255, 111, 97, 0.9), rgba(190, 46, 115, 0.9));
   transition: background-image 500ms;
 }
-@keyframes umw602o {
+@keyframes umw6v3t {
   0% {
     opacity: 0;
     transform: translateY(150px);
@@ -10495,12 +10495,12 @@ h2 {
 }
 .intro-section__img {
   transform: scale(1);
-  animation-name: umw603h;
+  animation-name: umw6v4n;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw603h {
+@keyframes umw6v4n {
   0% {
     opacity: 0;
     transform: translateX(50px);
@@ -10529,12 +10529,12 @@ h2 {
   animation-iteration-count: infinite;
 }
 .intro-section__scroll-container :nth-child(2) {
-  animation-name: umw603j;
+  animation-name: umw6v59;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 200ms;
 }
-@keyframes umw603j {
+@keyframes umw6v59 {
   0% {
     transform: translateY(-15px) rotate(-45deg);
     opacity: 1;
@@ -10545,12 +10545,12 @@ h2 {
   }
 }
 .intro-section__scroll-container :nth-child(3) {
-  animation-name: umw603l;
+  animation-name: umw6v5j;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw603l {
+@keyframes umw6v5j {
   0% {
     transform: translateY(-30px) rotate(-45deg);
     opacity: 1;
@@ -10563,6 +10563,7 @@ h2 {
 @media (max-width: 1399.98px) {
   .intro-section__additional-description {
     width: 70vw !important;
+    margin-bottom: 0 !important;
   }
 }
 @media (max-width: 1199.98px) {
@@ -10607,12 +10608,12 @@ h2 {
   }
   .intro-section__img {
     transform: scale(1);
-    animation-name: umw603w;
+    animation-name: umw6v6e;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes umw603w {
+  @keyframes umw6v6e {
     0% {
       opacity: 0;
       transform: scale(0.2);
@@ -10816,12 +10817,12 @@ h2 {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  animation-name: umw604k;
+  animation-name: umw6v7a;
   animation-duration: 800ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw604k {
+@keyframes umw6v7a {
   0% {
     top: 100%;
   }
@@ -10957,12 +10958,12 @@ h2 {
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
 }
 .education-container__education:hover::before {
-  animation-name: umw6053;
+  animation-name: umw6v7i;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw6053 {
+@keyframes umw6v7i {
   0% {
     width: 15%;
   }
@@ -11061,12 +11062,12 @@ h2 {
   bottom: 7px;
   top: 9px;
   right: auto;
-  animation-name: umw605p;
+  animation-name: umw6v8i;
   animation-duration: 1.8s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw605p {
+@keyframes umw6v8i {
   0% {
     width: 0px;
   }
@@ -11083,12 +11084,12 @@ h2 {
   bottom: 7px;
   top: 48.5px;
   right: auto;
-  animation-name: umw606g;
+  animation-name: umw6v96;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw606g {
+@keyframes umw6v96 {
   0% {
     width: 0px;
   }
@@ -11105,12 +11106,12 @@ h2 {
   bottom: 6px;
   top: auto;
   right: auto;
-  animation-name: umw606p;
+  animation-name: umw6va5;
   animation-duration: 2.2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw606p {
+@keyframes umw6va5 {
   0% {
     width: 0px;
   }
@@ -11171,12 +11172,12 @@ h2 {
     display: none;
   }
   .language-container__languages :nth-child(1)::before {
-    animation-name: umw6075;
+    animation-name: umw6van;
     animation-duration: 1.8s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes umw6075 {
+  @keyframes umw6van {
     0% {
       width: 0px;
     }
@@ -11185,12 +11186,12 @@ h2 {
     }
   }
   .language-container__languages :nth-child(2)::before {
-    animation-name: umw6080;
+    animation-name: umw6vbk;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes umw6080 {
+  @keyframes umw6vbk {
     0% {
       width: 0px;
     }
@@ -11199,12 +11200,12 @@ h2 {
     }
   }
   .language-container__languages :nth-child(3)::before {
-    animation-name: umw6090;
+    animation-name: umw6vca;
     animation-duration: 2.2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes umw6090 {
+  @keyframes umw6vca {
     0% {
       width: 0px;
     }
@@ -11357,12 +11358,12 @@ h2 {
   margin-left: 2rem;
 }
 .contact-container__content-group:hover i {
-  animation-name: umw6093;
+  animation-name: umw6vda;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw6093 {
+@keyframes umw6vda {
   0% {
     transform: rotate(0deg);
   }
@@ -11437,12 +11438,12 @@ h2 {
   border-bottom-color: #BE2E73;
   z-index: 2;
   animation-iteration-count: infinite !important;
-  animation-name: umw609s;
+  animation-name: umw6vdf;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw609s {
+@keyframes umw6vdf {
   0% {
     transform: rotate(0deg);
   }
