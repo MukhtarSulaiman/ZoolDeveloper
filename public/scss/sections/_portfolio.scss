@@ -32,7 +32,8 @@
         margin: 20px;
         padding: 20px;
         overflow: hidden;
-        @include gradient(to bottom, 0.15);
+        background: rgb($secondary, 0.13);
+        box-shadow: 0 0.5rem 1rem rgb($black, 15%);
         @include animation-on-scroll($transform-value: translateX(90px));
        
         &:hover .portfolio-container__external-links  {
