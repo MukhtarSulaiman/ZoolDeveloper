@@ -1,8 +1,8 @@
 # Project Name:  Zool Developer#
 
-![Zool Developer logo](./public/assets/images/projects/zooldeveloper.png):
+![Zool Developer logo](./public/assets/images/projects/zooldeveloper.png);
 
-This Project is my portfolio that has been designed and developed for personal purposes.
+This project is my portfolio that has been designed and developed for personal purposes.
 
 ## Coming features... ##
 
