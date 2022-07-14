@@ -10128,12 +10128,12 @@ h2 {
 }
 .skills-container__content:hover::after {
   background-color: #000;
-  animation-name: umw8orh;
+  animation-name: umw8r5d;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw8orh {
+@keyframes umw8r5d {
   0% {
     opacity: 0;
     bottom: 50px;
@@ -10291,12 +10291,12 @@ h2 {
   cursor: pointer;
   border-radius: 5px;
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
-  animation-name: umw8oru;
+  animation-name: umw8r66;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw8oru {
+@keyframes umw8r66 {
   0% {
     opacity: 0;
   }
@@ -10349,7 +10349,7 @@ h2 {
   padding-left: 22px;
   left: 0;
   opacity: 0;
-  animation-name: umw8osn;
+  animation-name: umw8r75;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 1.7s;
@@ -10379,7 +10379,7 @@ h2 {
   align-items: center;
   flex-direction: row;
 }
-@keyframes umw8osn {
+@keyframes umw8r75 {
   0% {
     opacity: 0;
     transform: translateX(-118px);
@@ -10407,12 +10407,12 @@ h2 {
   bottom: -30px;
 }
 .intro-section__main-heading {
-  animation-name: umw8osx;
+  animation-name: umw8r7c;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw8osx {
+@keyframes umw8r7c {
   0% {
     opacity: 0;
     transform: translateX(-150px);
@@ -10427,12 +10427,12 @@ h2 {
 }
 .intro-section__description {
   font-weight: 400;
-  animation-name: umw8otx;
+  animation-name: umw8r7n;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw8otx {
+@keyframes umw8r7n {
   0% {
     opacity: 0;
     transform: translateX(150px);
@@ -10466,7 +10466,7 @@ h2 {
   font-weight: bold;
   border: none;
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
-  animation-name: umw8ouf;
+  animation-name: umw8r8j;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 2s;
@@ -10475,7 +10475,7 @@ h2 {
   background-image: linear-gradient(to right, rgba(255, 111, 97, 0.9), rgba(190, 46, 115, 0.9));
   transition: background-image 500ms;
 }
-@keyframes umw8ouf {
+@keyframes umw8r8j {
   0% {
     opacity: 0;
     transform: translateY(150px);
@@ -10495,12 +10495,12 @@ h2 {
 }
 .intro-section__img {
   transform: scale(1);
-  animation-name: umw8ovb;
+  animation-name: umw8r8o;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw8ovb {
+@keyframes umw8r8o {
   0% {
     opacity: 0;
     transform: translateX(50px);
@@ -10529,12 +10529,12 @@ h2 {
   animation-iteration-count: infinite;
 }
 .intro-section__scroll-container :nth-child(2) {
-  animation-name: umw8ow7;
+  animation-name: umw8r9o;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 200ms;
 }
-@keyframes umw8ow7 {
+@keyframes umw8r9o {
   0% {
     transform: translateY(-15px) rotate(-45deg);
     opacity: 1;
@@ -10545,12 +10545,12 @@ h2 {
   }
 }
 .intro-section__scroll-container :nth-child(3) {
-  animation-name: umw8ow9;
+  animation-name: umw8rah;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw8ow9 {
+@keyframes umw8rah {
   0% {
     transform: translateY(-30px) rotate(-45deg);
     opacity: 1;
@@ -10608,12 +10608,12 @@ h2 {
   }
   .intro-section__img {
     transform: scale(1);
-    animation-name: umw8owu;
+    animation-name: umw8rap;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes umw8owu {
+  @keyframes umw8rap {
     0% {
       opacity: 0;
       transform: scale(0.2);
@@ -10821,12 +10821,12 @@ h2 {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  animation-name: umw8oxh;
+  animation-name: umw8rat;
   animation-duration: 800ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw8oxh {
+@keyframes umw8rat {
   0% {
     top: 100%;
   }
@@ -10962,12 +10962,12 @@ h2 {
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
 }
 .education-container__education:hover::before {
-  animation-name: umw8oxu;
+  animation-name: umw8rax;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw8oxu {
+@keyframes umw8rax {
   0% {
     width: 15%;
   }
@@ -11066,12 +11066,12 @@ h2 {
   bottom: 7px;
   top: 9px;
   right: auto;
-  animation-name: umw8oy7;
+  animation-name: umw8rb5;
   animation-duration: 1.8s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw8oy7 {
+@keyframes umw8rb5 {
   0% {
     width: 0px;
   }
@@ -11088,12 +11088,12 @@ h2 {
   bottom: 7px;
   top: 48.5px;
   right: auto;
-  animation-name: umw8oyo;
+  animation-name: umw8rbj;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw8oyo {
+@keyframes umw8rbj {
   0% {
     width: 0px;
   }
@@ -11110,12 +11110,12 @@ h2 {
   bottom: 6px;
   top: auto;
   right: auto;
-  animation-name: umw8ozh;
+  animation-name: umw8rbn;
   animation-duration: 2.2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw8ozh {
+@keyframes umw8rbn {
   0% {
     width: 0px;
   }
@@ -11176,12 +11176,12 @@ h2 {
     display: none;
   }
   .language-container__languages :nth-child(1)::before {
-    animation-name: umw8p0g;
+    animation-name: umw8rc2;
     animation-duration: 1.8s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes umw8p0g {
+  @keyframes umw8rc2 {
     0% {
       width: 0px;
     }
@@ -11190,12 +11190,12 @@ h2 {
     }
   }
   .language-container__languages :nth-child(2)::before {
-    animation-name: umw8p0y;
+    animation-name: umw8rc5;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes umw8p0y {
+  @keyframes umw8rc5 {
     0% {
       width: 0px;
     }
@@ -11204,12 +11204,12 @@ h2 {
     }
   }
   .language-container__languages :nth-child(3)::before {
-    animation-name: umw8p15;
+    animation-name: umw8rd1;
     animation-duration: 2.2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes umw8p15 {
+  @keyframes umw8rd1 {
     0% {
       width: 0px;
     }
@@ -11362,12 +11362,12 @@ h2 {
   margin-left: 2rem;
 }
 .contact-container__content-group:hover i {
-  animation-name: umw8p16;
+  animation-name: umw8rd2;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw8p16 {
+@keyframes umw8rd2 {
   0% {
     transform: rotate(0deg);
   }
@@ -11442,12 +11442,12 @@ h2 {
   border-bottom-color: #BE2E73;
   z-index: 2;
   animation-iteration-count: infinite !important;
-  animation-name: umw8p1f;
+  animation-name: umw8rdy;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes umw8p1f {
+@keyframes umw8rdy {
   0% {
     transform: rotate(0deg);
   }
