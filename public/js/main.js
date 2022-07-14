@@ -86,10 +86,8 @@ darkModeToggle.addEventListener('click', () => {
 
 // Downloads the resume
 function download(fileUrl, fileName) {
-	let a = document.createElement('a');
-	a.href = fileUrl;
-	a.setAttribute('download', fileName);
-	a.click();
+	window.open(fileUrl, '_blank', 'fullscreen=yes');
+	return false;
 }
 
 document.querySelector('footer>small>span').innerText =
