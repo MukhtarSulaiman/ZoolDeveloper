@@ -19,3 +19,25 @@ btnReadMore.addEventListener('click', () => {
 		arrowIcon.classList.remove('fa-arrow-left');
 	}
 });
+
+const dynamicDescription = document.querySelector(
+	'.intro-section__dynamic-description'
+);
+
+const textLoad = () => {
+
+	setTimeout(() => {
+		dynamicDescription.textContent = 'Web Junior';
+	}, 0);
+
+	setTimeout(() => {
+		dynamicDescription.textContent = 'Front-end';
+	}, 4000);
+
+	setTimeout(() => {
+		dynamicDescription.textContent = 'Fullstack junior';
+	}, 8000);
+}
+
+textLoad();
+setInterval(textLoad, 12000)

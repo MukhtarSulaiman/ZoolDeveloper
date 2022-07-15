@@ -10128,12 +10128,12 @@ h2 {
 }
 .skills-container__content:hover::after {
   background-color: #000;
-  animation-name: uatv7ur;
+  animation-name: uatzgge;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes uatv7ur {
+@keyframes uatzgge {
   0% {
     opacity: 0;
     bottom: 50px;
@@ -10291,12 +10291,12 @@ h2 {
   cursor: pointer;
   border-radius: 5px;
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
-  animation-name: uatv7va;
+  animation-name: uatzggy;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes uatv7va {
+@keyframes uatzggy {
   0% {
     opacity: 0;
   }
@@ -10345,11 +10345,47 @@ h2 {
 .intro-section__intros {
   padding-left: 150px;
 }
+.intro-section__static-description {
+  position: relative;
+}
+.intro-section__dynamic-description {
+  position: relative;
+}
+.intro-section__dynamic-description::before {
+  content: "👨🏾‍💻";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 5px;
+  font-size: 2rem;
+  z-index: 1;
+  background: var(--color-page-background);
+  border-left: 2px solid #BE2E73;
+  animation: steps(15) infinite;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  animation-name: uatzght;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+@keyframes uatzght {
+  40%, 60% {
+    left: calc(100% + 5px);
+  }
+  100% {
+    left: 0;
+  }
+}
 .intro-section__network {
   padding-left: 22px;
   left: 0;
   opacity: 0;
-  animation-name: uatv7vx;
+  animation-name: uatzgi5;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 1.7s;
@@ -10379,7 +10415,7 @@ h2 {
   align-items: center;
   flex-direction: row;
 }
-@keyframes uatv7vx {
+@keyframes uatzgi5 {
   0% {
     opacity: 0;
     transform: translateX(-118px);
@@ -10407,12 +10443,12 @@ h2 {
   bottom: -30px;
 }
 .intro-section__main-heading {
-  animation-name: uatv7wg;
+  animation-name: uatzgix;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes uatv7wg {
+@keyframes uatzgix {
   0% {
     opacity: 0;
     transform: translateX(-150px);
@@ -10427,12 +10463,12 @@ h2 {
 }
 .intro-section__description {
   font-weight: 400;
-  animation-name: uatv7wz;
+  animation-name: uatzgjt;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes uatv7wz {
+@keyframes uatzgjt {
   0% {
     opacity: 0;
     transform: translateX(150px);
@@ -10466,7 +10502,7 @@ h2 {
   font-weight: bold;
   border: none;
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
-  animation-name: uatv7xl;
+  animation-name: uatzgkf;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 2s;
@@ -10475,7 +10511,7 @@ h2 {
   background-image: linear-gradient(to right, rgba(255, 111, 97, 0.9), rgba(190, 46, 115, 0.9));
   transition: background-image 500ms;
 }
-@keyframes uatv7xl {
+@keyframes uatzgkf {
   0% {
     opacity: 0;
     transform: translateY(150px);
@@ -10495,12 +10531,12 @@ h2 {
 }
 .intro-section__img {
   transform: scale(1);
-  animation-name: uatv7y5;
+  animation-name: uatzgkt;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes uatv7y5 {
+@keyframes uatzgkt {
   0% {
     opacity: 0;
     transform: translateX(50px);
@@ -10529,12 +10565,12 @@ h2 {
   animation-iteration-count: infinite;
 }
 .intro-section__scroll-container :nth-child(2) {
-  animation-name: uatv7ym;
+  animation-name: uatzgln;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 200ms;
 }
-@keyframes uatv7ym {
+@keyframes uatzgln {
   0% {
     transform: translateY(-15px) rotate(-45deg);
     opacity: 1;
@@ -10545,12 +10581,12 @@ h2 {
   }
 }
 .intro-section__scroll-container :nth-child(3) {
-  animation-name: uatv7yv;
+  animation-name: uatzgls;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes uatv7yv {
+@keyframes uatzgls {
   0% {
     transform: translateY(-30px) rotate(-45deg);
     opacity: 1;
@@ -10608,12 +10644,12 @@ h2 {
   }
   .intro-section__img {
     transform: scale(1);
-    animation-name: uatv7zc;
+    animation-name: uatzgmk;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes uatv7zc {
+  @keyframes uatzgmk {
     0% {
       opacity: 0;
       transform: scale(0.2);
@@ -10643,6 +10679,21 @@ h2 {
 @media (max-width: 400px) {
   .intro-section__description-container.active .intro-section__additional-description {
     height: 285px !important;
+  }
+}
+@media (min-width: 425px) {
+  .intro-section__static-description {
+    display: inline !important;
+  }
+}
+@media (min-width: 992px) {
+  .intro-section__static-description {
+    display: block !important;
+  }
+}
+@media (min-width: 1200px) {
+  .intro-section__static-description {
+    display: inline !important;
   }
 }
 
@@ -10821,12 +10872,12 @@ h2 {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  animation-name: uatv7zk;
+  animation-name: uatzgna;
   animation-duration: 800ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes uatv7zk {
+@keyframes uatzgna {
   0% {
     top: 100%;
   }
@@ -10962,12 +11013,12 @@ h2 {
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
 }
 .education-container__education:hover::before {
-  animation-name: uatv80k;
+  animation-name: uatzgnl;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes uatv80k {
+@keyframes uatzgnl {
   0% {
     width: 15%;
   }
@@ -11066,12 +11117,12 @@ h2 {
   bottom: 7px;
   top: 9px;
   right: auto;
-  animation-name: uatv80x;
+  animation-name: uatzgnw;
   animation-duration: 1.8s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes uatv80x {
+@keyframes uatzgnw {
   0% {
     width: 0px;
   }
@@ -11088,12 +11139,12 @@ h2 {
   bottom: 7px;
   top: 48.5px;
   right: auto;
-  animation-name: uatv81s;
+  animation-name: uatzgos;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes uatv81s {
+@keyframes uatzgos {
   0% {
     width: 0px;
   }
@@ -11110,12 +11161,12 @@ h2 {
   bottom: 6px;
   top: auto;
   right: auto;
-  animation-name: uatv81x;
+  animation-name: uatzgpp;
   animation-duration: 2.2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes uatv81x {
+@keyframes uatzgpp {
   0% {
     width: 0px;
   }
@@ -11176,12 +11227,12 @@ h2 {
     display: none;
   }
   .language-container__languages :nth-child(1)::before {
-    animation-name: uatv81z;
+    animation-name: uatzgql;
     animation-duration: 1.8s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes uatv81z {
+  @keyframes uatzgql {
     0% {
       width: 0px;
     }
@@ -11190,12 +11241,12 @@ h2 {
     }
   }
   .language-container__languages :nth-child(2)::before {
-    animation-name: uatv82i;
+    animation-name: uatzgqx;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes uatv82i {
+  @keyframes uatzgqx {
     0% {
       width: 0px;
     }
@@ -11204,12 +11255,12 @@ h2 {
     }
   }
   .language-container__languages :nth-child(3)::before {
-    animation-name: uatv839;
+    animation-name: uatzgrq;
     animation-duration: 2.2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes uatv839 {
+  @keyframes uatzgrq {
     0% {
       width: 0px;
     }
@@ -11362,12 +11413,12 @@ h2 {
   margin-left: 2rem;
 }
 .contact-container__content-group:hover i {
-  animation-name: uatv83e;
+  animation-name: uatzgrx;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes uatv83e {
+@keyframes uatzgrx {
   0% {
     transform: rotate(0deg);
   }
@@ -11442,12 +11493,12 @@ h2 {
   border-bottom-color: #BE2E73;
   z-index: 2;
   animation-iteration-count: infinite !important;
-  animation-name: uatv840;
+  animation-name: uatzgsf;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes uatv840 {
+@keyframes uatzgsf {
   0% {
     transform: rotate(0deg);
   }
@@ -11675,7 +11726,7 @@ i,
   background: rgba(190, 46, 115, 0.8);
   text-align: center;
   border-radius: 10px;
-  z-index: 3;
+  z-index: 20;
 }
 
 @media (max-width: 991.98px) {

@@ -14,6 +14,39 @@
 	&__intros {
 		padding-left: 150px;
 	}
+
+	&__static-description {
+		position: relative;
+	}
+
+	&__dynamic-description {
+		position: relative;
+		&::before {
+			content: '' + 👨🏾‍💻;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding-left: 5px;
+			font-size: 2rem;
+			z-index: 1;
+			background: var(--color-page-background);
+			border-left: 2px solid $secondary;
+			animation: steps(15) infinite;
+			@include flexbox(left);
+			@include animation(4s) {
+				40%,
+				60% {
+					left: calc(100% + 5px);
+				}
+				100% {
+					left: 0;
+				}
+			}
+		}
+	}
+
 	&__network {
 		padding-left: 22px;
 		left: 0;
@@ -270,9 +303,27 @@
 		}
 	}
 
+	// Custom breakpoints
 	@media (max-width: 400px) {
 		&__description-container.active &__additional-description {
 			height: 285px !important;
+		}
+	}
+
+	@media (min-width: 425px) {
+		&__static-description {
+			display: inline !important;
+		}
+	}
+
+	@media (min-width: 992px) {
+		&__static-description {
+			display: block !important;
+		}
+	}
+	@media (min-width: 1200px) {
+		&__static-description {
+			display: inline !important;
 		}
 	}
 }
