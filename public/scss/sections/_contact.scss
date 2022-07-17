@@ -42,6 +42,7 @@
 
 	&__network-personal-info {
 		height: inherit;
+		font-family: 'Lora', serif;
 		@include flexbox(space-between, start, column);
 
 		h3 {
