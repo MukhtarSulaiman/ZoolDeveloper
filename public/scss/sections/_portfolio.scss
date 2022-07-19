@@ -1,135 +1,174 @@
+/** @format */
+
 @use '../custom' as *;
 @use '../components/mixins' as *;
 @use '../components/buttons' as *;
 @use '../components/animations' as *;
 
 #portfolio {
-    margin: 100px 0;
-     h2 {
-        margin-bottom: 1.5rem !important;
-    }
+	margin: 100px 0;
+	h2 {
+		margin-bottom: 1.5rem !important;
+	}
 }
 
 .portfolio-container {
-    
-    h3 {
-        padding: 0 5px;
-        margin: 0px auto 10px;
-        width: fit-content;
-        border-width: 2px;
-        border-style: solid;
-        border-image: linear-gradient(to left, $primary, $secondary);
-        border-image-slice: 1;
-    }
-    h4 {
-        margin-bottom: 20px;
-        font-size: 1.1rem;
-    }
-    p {
-        padding: 15px 19px;
-        transform: scaleX(1.1);
-    }
+	h3 {
+		padding: 0 5px;
+		margin: 0px auto 10px;
+		width: fit-content;
+		border-width: 2px;
+		border-style: solid;
+		border-image: linear-gradient(to left, $primary, $secondary);
+		border-image-slice: 1;
+	}
+	h4 {
+		margin-bottom: 20px;
+		font-size: 1.1rem;
+	}
+	p {
+		padding: 15px 19px;
+		transform: scaleX(1.1);
+		flex: 1 !important;
+	}
 
-    &__project {
-        width: 28%;
-        margin: 20px;
-        padding: 20px;
-        overflow: hidden;
-        background: rgb($secondary, 0.13);
-        box-shadow: 0 0.5rem 1rem rgb($black, 15%);
-        @include animation-on-scroll($transform-value: translateX(90px));
-       
-        &:hover .portfolio-container__external-links  {
-            display: block;
-            width: 100%;
-            height: 110%;
-            position: absolute;
-            left: 0;
-            background-color: rgb($primary, 0.3);
-            transform: scaleX(1.1);
-            @include flexbox(space-around);
-            @include animation(800ms) {
-                0% {top: 100%;}
-                100% { top:0%;};
-            }
-            a {
-                @include custom-btn(130px);
-                @include flexbox;
-                text-decoration: none;
-                font-size: 0.8rem;
-            }
-            i {
-                margin-left: 3px;
-                color: $white !important;
-            }
-        }
+	&__project {
+		width: 28%;
+		margin: 20px;
+		padding: 20px;
+		overflow: hidden;
+		background: rgb($secondary, 0.13);
+		box-shadow: 0 0.5rem 1rem rgb($black, 15%);
+		@include animation-on-scroll($transform-value: translateX(90px));
 
-        &:hover .portfolio-container__project-img {
-            transform: scale(1.1);
-        }
-        &:hover p,
-        &:hover h4 {
-            opacity: 0.3 !important;
-        }
-    }
-    &__project.show {
-         @include animation-on-scroll(1, translateX(0));
-    }
+		&:hover .portfolio-container__project-img {
+			transform: scale(1.1);
+		}
 
-    &__project-img {
-        width: 100%;
-        margin: 0 auto 15px;
-        transition: transform 500ms linear;
-        box-shadow: 0 0 0.5px $dark;
-    }
+		&:hover p,
+		&:hover h4 {
+			opacity: 0.3 !important;
+		}
+	}
 
-    &__content {
-        position: relative;
-        min-height: 310px;
-        @include flexbox($justify-content: space-between , $flex-direction: column);
-    }
+	&__project.show {
+		@include animation-on-scroll(1, translateX(0));
+	}
 
-    &__techno {
-        width: 100%; 
-        text-align: center;
-    }
+	&__project-img {
+		width: 100%;
+		margin: 0 auto 15px;
+		transition: transform 500ms linear;
+		box-shadow: 0 0 0.5px $dark;
+	}
 
-    &__icons-wrapper {
-        display: flex !important;
-        justify-content: space-around !important;
-    }
+	&__content {
+		position: relative;
+		bottom: 0 !important;
+		min-height: 310px;
+		@include flexbox(
+			$justify-content: space-between,
+			$flex-direction: column
+		);
+	}
 
-    &__icon {
-        height: 25px;
-    }
-    
-    &__external-links {
-        display: none;
-    }
+	&__techno {
+		width: 100%;
+		text-align: center;
+	}
 
-    @include media-breakpoint-down(md) {
-        &__project {
-            width: 98% !important;
-        }
-    }
-    @include media-breakpoint-down(lg) {
-        &__project {
-            width: 47%;
-            margin: 10px !important;
-        }
-        p {
-            margin: 0 15px;
-        }
-    }
-    @include media-breakpoint-down(xl) {
-        &__project:hover &__external-links {
-            @include flexbox($justify-content: space-evenly !important, $flex-direction: column !important);
-        }
-    }
+	&__icons-wrapper {
+		display: flex !important;
+		justify-content: space-around !important;
+	}
+
+	&__icon {
+		height: 25px;
+	}
+
+	&__external-links {
+		width: 100%;
+		height: 110%;
+		position: absolute;
+		left: 0;
+		background-color: rgb($primary, 0.3);
+		transform: scaleX(1.1);
+		@include animation(800ms) {
+			0% {
+				top: 100%;
+			}
+			100% {
+				top: 0%;
+			}
+		}
+		a {
+			@include custom-btn(130px);
+			@include flexbox;
+			text-decoration: none;
+			font-size: 0.8rem;
+		}
+		i {
+			margin-left: 3px;
+			color: $white !important;
+		}
+		display: none;
+	}
+
+	&__external-links.show-links {
+		@include flexbox(space-around);
+	}
+
+	@include media-breakpoint-down(md) {
+		&__project {
+			width: 98% !important;
+		}
+
+		&__content {
+			min-height: 300px !important;
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		&__project {
+			width: 47%;
+			margin: 10px !important;
+			padding-bottom: 0 !important;
+
+			&:hover .portfolio-container__project-img {
+				transform: scale(1);
+			}
+
+			&:hover p,
+			&:hover h4 {
+				opacity: 1 !important;
+			}
+		}
+
+		&__content {
+			min-height: 465px;
+		}
+
+		&__external-links {
+			@include flexbox(space-around !important);
+			position: relative !important;
+			height: 75px;
+			margin-top: 2rem;
+			margin-bottom: 0 !important;
+			border-radius: 20px;
+		}
+	}
+	@include media-breakpoint-down(xl) {
+		&__external-links {
+			a {
+				@include custom-btn(110px);
+				height: 45px;
+			}
+		}
+	}
 }
 
 @include media-breakpoint-down(md) {
-    #portfolio {
-       margin-top: 170px;
-    }
+	#portfolio {
+		margin-top: 170px;
+	}
 }
