@@ -178,12 +178,7 @@
 		margin-top: 4rem;
 
 		.arrow {
-			width: 17px;
-			height: 17px;
-			border-left: 2px solid $primary;
-			border-bottom: 2px solid $primary;
-			transform: rotate(-45deg);
-			animation-iteration-count: infinite;
+			@include arrow-indicator;
 		}
 
 		:nth-child(2) {

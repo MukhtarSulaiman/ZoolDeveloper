@@ -242,6 +242,42 @@
 	}
 }
 
+.scroll-container {
+		position: absolute;
+		right: 5%;
+		bottom: 0;
+
+		.arrow {
+			@include arrow-indicator(top, 45deg);
+		}
+
+		:nth-child(1) {
+			@include animation(2s) {
+				0% {
+					transform: translateY(30px) rotate(45deg);
+					opacity: 1;
+				}
+				100% {
+					transform: translateY(-15px) rotate(45deg);
+					opacity: 0;
+				}
+			}
+		}
+
+		:nth-child(2) {
+			@include animation(2s, 150ms) {
+				0% {
+					transform: translateY(17px) rotate(45deg);
+					opacity: 1;
+				}
+				100% {
+					transform: translateY(-15px) rotate(45deg);
+					opacity: 0;
+				}
+			}
+		}
+	}
+
 @include media-breakpoint-down(sm) {
 	.contact-container {
 		padding: 6rem 2rem !important;

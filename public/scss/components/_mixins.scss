@@ -1,32 +1,58 @@
+/** @format */
+
 @use '../custom' as *;
 
 @mixin gradient($direction: to right, $opacity: 1) {
-    background-image: linear-gradient($direction, rgb($primary, $opacity), rgb($secondary, $opacity));
+	background-image: linear-gradient(
+		$direction,
+		rgb($primary, $opacity),
+		rgb($secondary, $opacity)
+	);
 }
 
-@mixin flexbox($justify-content: center, $align-items: center, $flex-direction: row) {
-    display: flex;
-    justify-content: $justify-content;
-    align-items: $align-items;
-    flex-direction: $flex-direction;
+@mixin flexbox(
+	$justify-content: center,
+	$align-items: center,
+	$flex-direction: row
+) {
+	display: flex;
+	justify-content: $justify-content;
+	align-items: $align-items;
+	flex-direction: $flex-direction;
 }
 
-// This mixin is not yet used 
+// This mixin is not yet used
 @mixin border-gradient($width: 2px) {
-    border-width: $width;
-    border-style: solid;
-    border-image: linear-gradient(to left, $primary, $secondary);
-    border-image-slice: 1;
+	border-width: $width;
+	border-style: solid;
+	border-image: linear-gradient(to left, $primary, $secondary);
+	border-image-slice: 1;
 }
 
 // This mixin line is gradient and animated in some parts!
-@mixin line ($width: 60%, $height: 2px, $left: 12px, $right: auto, $top: auto, $bottom: 7px) {
-    content: "";
-    width: $width;
-    height: $height;
-    position: absolute;
-    left: $left;
-    bottom: $bottom;
-    top: $top;
-    right: $right;
+@mixin line(
+	$width: 60%,
+	$height: 2px,
+	$left: 12px,
+	$right: auto,
+	$top: auto,
+	$bottom: 7px
+) {
+	content: '';
+	width: $width;
+	height: $height;
+	position: absolute;
+	left: $left;
+	bottom: $bottom;
+	top: $top;
+	right: $right;
+}
+
+@mixin arrow-indicator($border-side: bottom, $deg:-45deg) {
+	width: 17px;
+	height: 17px;
+     border-left: 2px solid $primary;
+     border-#{$border-side}: 2px solid $primary;
+	transform: rotate($deg);
+	animation-iteration-count: infinite;
 }

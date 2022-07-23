@@ -18,7 +18,7 @@
         <div class="cursor cursor2"></div>
         <div class="alert-message"></div>
         <!--   Navbar section -->
-        <nav class="navbar navbar-expand-lg mt-3 navbar-dark shadow fixed-top">
+        <nav id="#top" class="navbar navbar-expand-lg mt-3 navbar-dark shadow fixed-top">
             <div class="container">
                 <div class="navbar-brand">
                     <a class="text-white text-decoration-none" href="#">
@@ -131,11 +131,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="intro-section__scroll-container">
-                    <div class="arrow"></div>
-                    <div class="arrow"></div>
-                    <div class="arrow"></div>
-                </div>
+                <a href="#bottom">
+                    <div class="intro-section__scroll-container">
+                        <div class="arrow"></div>
+                        <div class="arrow"></div>
+                        <div class="arrow"></div>
+                    </div>
+                </a>
             </section>
             <!-- Skills section -->
             <section id="skills">
@@ -549,10 +551,17 @@
                         onClick="download('assets/files/cv-mukhtar_sulaiman-fr.pdf', 'CV-Mukhtar-Sulaiman-fr.pdf')">Mon
                         CV <i class="fas fa-arrow-down"></i></button>
                 </div>
+                <a href="#top">
+                    <div class="scroll-container">
+                        <div class="arrow"></div>
+                        <div class="arrow"></div>
+                        <div class="arrow"></div>
+                    </div>
+                </a>
             </section>
         </main>
         <!-- Footer section -->
-        <footer>
+        <footer id="bottom">
             <small>&copy; Copyright <span></span> - Zool Developer</small>
         </footer>
         <script src="js/main.js"></script>
