@@ -10,6 +10,23 @@ const app = express();
 const PORT = process.env.PORT || 500;
 
 app.use(helmet());
+app.use(
+	helmet.contentSecurityPolicy({
+		directives: {
+			'script-src': [
+				"'self'",
+				'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js',
+				'https://fonts.gstatic.com/s/raleway/v28/1Ptsg8zYS_SKggPNyCg4TYFqL_KWxQ.woff2',
+			],
+			'default-src': [
+				"'self'",
+				'http://localhost:500',
+				'https://zooldeveloper.com',
+				'*.zooldeveloper.com',
+			],
+		},
+	})
+);
 app.use(express.json());
 app.use(
 	express.urlencoded({
@@ -21,7 +38,6 @@ app.get('*', (req, res) => {
 	res.sendFile(__dirname + '/public/index.html');
 });
 
-
 const OAuth2Client = new google.auth.OAuth2(
 	process.env.CLIENT_ID,
 	process.env.CLIENT_SECRET,
@@ -29,9 +45,7 @@ const OAuth2Client = new google.auth.OAuth2(
 );
 OAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
 
-
 app.post('/', (req, res) => {
-	console.log(req.body)
 	async function sendMail() {
 		try {
 			const accessToken = await OAuth2Client.getAccessToken();
@@ -44,10 +58,10 @@ app.post('/', (req, res) => {
 					clientId: process.env.CLIENT_ID,
 					clientSecret: process.env.CLIENT_SECRET,
 					refreshToken: process.env.REFRESH_TOKEN,
-					accessToken: accessToken
+					accessToken: accessToken,
 				},
 			});
-			
+
 			const output = `
 			<ul>
 				<li>Nom: <b>${req.body.fullNameValue}</b></li>
@@ -60,7 +74,7 @@ app.post('/', (req, res) => {
 				from: `'${req.body.fullNameValue}' <${process.env.SENDER_USER}>`,
 				to: process.env.RECEIVER_USER,
 				subject: req.body.subjectValue,
-				html: output, 
+				html: output,
 			};
 
 			const result = await transporter.sendMail(mailOption);
@@ -71,7 +85,9 @@ app.post('/', (req, res) => {
 	}
 	sendMail()
 		.then(result => {
-			res.status(200).send('Votre mail a été envoyé avec succès 😊');
+			res.status(200).send(
+				'Votre mail a été envoyé avec succès 😊'
+			);
 			console.log(`Email sent: ${result}`);
 		})
 		.catch(error => {
