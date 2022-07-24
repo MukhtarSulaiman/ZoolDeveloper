@@ -60,10 +60,10 @@
                             </span>
                         </li>
                         <li class="nav-item nav-item-lang">
-                            <select name="language" onchange="changeLanguage(this.value)">
-                                <option onclick="changeLanguage" value="French">FR</option>
-                                <option onclick="changeLanguage" value="English">EN</option>
-                                <option onclick="changeLanguage" value="Arabic">AR</option>
+                            <select id="site-language" name="language">
+                                <option value="French">FR</option>
+                                <option value="English">EN</option>
+                                <option value="Arabic">AR</option>
                             </select>
                         </li>
                     </ul>
@@ -193,9 +193,7 @@
                             </div>
                         </div>
                     </div>
-                    <button
-                        onClick="download('assets/files/cv-mukhtar_sulaiman-fr.pdf', 'CV-Mukhtar-Sulaiman-fr.pdf')">Télécharger
-                        mon CV</button>
+                    <button class="download-resume">Télécharger mon CV</button>
                 </div>
             </section>
             <!-- Portfoilo section -->
@@ -493,7 +491,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contact-container__personal-info fs-5 fw-lighter">
+                        <div class="contact-container__personal-info fw-lighter">
                             <a href="tel:+33767739978" class="text-decoration-none">
                                 <div class="contact-container__content-group">
                                     <div class="contact-icon-bg">
@@ -547,9 +545,8 @@
                     </form>
                 </div>
                 <div class="download">
-                    <button
-                        onClick="download('assets/files/cv-mukhtar_sulaiman-fr.pdf', 'CV-Mukhtar-Sulaiman-fr.pdf')">Mon
-                        CV <i class="fas fa-arrow-down"></i></button>
+                    <button class="download-resume">Mon CV 
+                        <i class="fas fa-arrow-down"></i></button>
                 </div>
                 <a href="#top">
                     <div class="scroll-container">
@@ -574,5 +571,4 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
     </body>
-
 </html>

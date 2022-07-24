@@ -84,11 +84,15 @@ darkModeToggle.addEventListener('click', () => {
 	}
 });
 
-// Downloads the resume
-function download(fileUrl, fileName) {
-	window.open(fileUrl, '_blank', 'fullscreen=yes');
-	return false;
-}
+document.querySelectorAll('.download-resume').forEach(downloadResume => {
+	downloadResume.addEventListener('click', () => {
+		window.open(
+			'../assets/files/cv-mukhtar_sulaiman-fr.pdf',
+			'_blank',
+			'fullscreen=yes'
+		);
+	});
+});
 
 document.querySelector('footer>small>span').innerText =
 	new Date().getFullYear();

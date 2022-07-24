@@ -23,22 +23,29 @@ const scrollingSpy = () => {
 	};
 };
 
+const siteLanguage = document.getElementById('site-language');
+const alertMessage = document.querySelector('.alert-message');
+let timeHandle;
 
-function changeLanguage(lang) {
-	const alertMessage = document.querySelector('.alert-message');
+
+siteLanguage.addEventListener('change', () => {
+	
 	alertMessage.classList.add('show-alert-message');
 
-	if (lang === 'French') {
-		alertMessage.innerHTML = 'Cette fonctionnalité sera bientôt disponible !';
-	} else if (lang === 'English') {
-		alertMessage.innerHTML= 'This feature will be available soon !';
-	} else if (lang === 'Arabic') {
-		alertMessage.innerText = "! هذه الخاصية ستكون متاحة قريبًا";
+	if (siteLanguage.value === 'French') {
+		alertMessage.innerHTML =
+			'Cette fonctionnalité sera bientôt disponible !';
+	} else if (siteLanguage.value === 'English') {
+		alertMessage.innerHTML = 'This feature will be available soon !';
+	} else if (siteLanguage.value === 'Arabic') {
+		alertMessage.innerText = '! هذه الخاصية ستكون متاحة قريبًا';
 	}
-
-	setTimeout(() => {
+	
+	clearTimeout(timeHandle);
+	timeHandle = setTimeout(() => {
 		alertMessage.classList.remove('show-alert-message');
 	}, 6000);
-}
+	
+});
 
 scrollingSpy();
