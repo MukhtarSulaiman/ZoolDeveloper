@@ -17,8 +17,8 @@ function animateProgressCircles() {
 	let progressValue2 = 0;
 	let progressValue3 = 0;
 
-	let progressEndValue1 = 70;
-	let progressEndValue2 = 85;
+	let progressEndValue1 = 75;
+	let progressEndValue2 = 90;
 	let progressEndValue3 = 100;
 
 	const speed = 20;
