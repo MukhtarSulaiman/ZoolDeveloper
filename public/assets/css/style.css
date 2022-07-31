@@ -10128,12 +10128,12 @@ h2 {
 }
 .skills-container__content:hover::after {
   background-color: #000;
-  animation-name: ushzt54;
+  animation-name: usi1fim;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes ushzt54 {
+@keyframes usi1fim {
   0% {
     opacity: 0;
     bottom: 50px;
@@ -10291,12 +10291,12 @@ h2 {
   cursor: pointer;
   border-radius: 5px;
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
-  animation-name: ushzt5j;
+  animation-name: usi1fjk;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes ushzt5j {
+@keyframes usi1fjk {
   0% {
     opacity: 0;
   }
@@ -10368,12 +10368,12 @@ h2 {
   justify-content: left;
   align-items: center;
   flex-direction: row;
-  animation-name: ushzt66;
+  animation-name: usi1fk7;
   animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes ushzt66 {
+@keyframes usi1fk7 {
   40%, 60% {
     left: calc(100% + 5px);
   }
@@ -10385,7 +10385,7 @@ h2 {
   padding-left: 22px;
   left: 0;
   opacity: 0;
-  animation-name: ushzt6k;
+  animation-name: usi1fkp;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 1.7s;
@@ -10415,7 +10415,7 @@ h2 {
   align-items: center;
   flex-direction: row;
 }
-@keyframes ushzt6k {
+@keyframes usi1fkp {
   0% {
     opacity: 0;
     transform: translateX(-118px);
@@ -10443,12 +10443,12 @@ h2 {
   bottom: -30px;
 }
 .intro-section__main-heading {
-  animation-name: ushzt79;
+  animation-name: usi1fkv;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes ushzt79 {
+@keyframes usi1fkv {
   0% {
     opacity: 0;
     transform: translateX(-150px);
@@ -10463,12 +10463,12 @@ h2 {
 }
 .intro-section__description {
   font-weight: 400;
-  animation-name: ushzt87;
+  animation-name: usi1fls;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes ushzt87 {
+@keyframes usi1fls {
   0% {
     opacity: 0;
     transform: translateX(150px);
@@ -10502,7 +10502,7 @@ h2 {
   font-weight: bold;
   border: none;
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
-  animation-name: ushzt8p;
+  animation-name: usi1fm9;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 2s;
@@ -10511,7 +10511,7 @@ h2 {
   background-image: linear-gradient(to right, rgba(255, 111, 97, 0.9), rgba(190, 46, 115, 0.9));
   transition: background-image 500ms;
 }
-@keyframes ushzt8p {
+@keyframes usi1fm9 {
   0% {
     opacity: 0;
     transform: translateY(150px);
@@ -10531,12 +10531,12 @@ h2 {
 }
 .intro-section__img {
   transform: scale(1);
-  animation-name: ushzt8v;
+  animation-name: usi1fmf;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes ushzt8v {
+@keyframes usi1fmf {
   0% {
     opacity: 0;
     transform: translateX(50px);
@@ -10565,12 +10565,12 @@ h2 {
   animation-iteration-count: infinite;
 }
 .intro-section__scroll-container :nth-child(2) {
-  animation-name: ushzt9n;
+  animation-name: usi1fn3;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 200ms;
 }
-@keyframes ushzt9n {
+@keyframes usi1fn3 {
   0% {
     transform: translateY(-15px) rotate(-45deg);
     opacity: 1;
@@ -10581,12 +10581,12 @@ h2 {
   }
 }
 .intro-section__scroll-container :nth-child(3) {
-  animation-name: ushztaj;
+  animation-name: usi1fnv;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes ushztaj {
+@keyframes usi1fnv {
   0% {
     transform: translateY(-30px) rotate(-45deg);
     opacity: 1;
@@ -10644,12 +10644,12 @@ h2 {
   }
   .intro-section__img {
     transform: scale(1);
-    animation-name: ushztao;
+    animation-name: usi1foa;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes ushztao {
+  @keyframes usi1foa {
     0% {
       opacity: 0;
       transform: scale(0.2);
@@ -10906,13 +10906,13 @@ h2 {
   left: 0;
   background-color: rgba(255, 111, 97, 0.3);
   transform: scaleX(1.1);
-  animation-name: ushztb2;
+  animation-name: usi1foz;
   animation-duration: 800ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
   display: none;
 }
-@keyframes ushztb2 {
+@keyframes usi1foz {
   0% {
     top: 100%;
   }
@@ -11044,12 +11044,12 @@ h2 {
   background-image: linear-gradient(to right, #ff6f61, #be2e73);
 }
 .education-container__education:hover::before {
-  animation-name: ushztbl;
+  animation-name: usi1fpf;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes ushztbl {
+@keyframes usi1fpf {
   0% {
     width: 15%;
   }
@@ -11148,12 +11148,12 @@ h2 {
   bottom: 7px;
   top: 9px;
   right: auto;
-  animation-name: ushztbu;
+  animation-name: usi1fpt;
   animation-duration: 1.8s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes ushztbu {
+@keyframes usi1fpt {
   0% {
     width: 0px;
   }
@@ -11170,12 +11170,12 @@ h2 {
   bottom: 7px;
   top: 48.5px;
   right: auto;
-  animation-name: ushztci;
+  animation-name: usi1fpv;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes ushztci {
+@keyframes usi1fpv {
   0% {
     width: 0px;
   }
@@ -11192,12 +11192,12 @@ h2 {
   bottom: 6px;
   top: auto;
   right: auto;
-  animation-name: ushztdd;
+  animation-name: usi1fq6;
   animation-duration: 2.2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes ushztdd {
+@keyframes usi1fq6 {
   0% {
     width: 0px;
   }
@@ -11258,45 +11258,45 @@ h2 {
     display: none;
   }
   .language-container__languages :nth-child(1)::before {
-    animation-name: ushzte7;
+    animation-name: usi1fqr;
     animation-duration: 1.8s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes ushzte7 {
+  @keyframes usi1fqr {
     0% {
       width: 0px;
     }
     100% {
-      width: 37%;
+      width: 40%;
     }
   }
   .language-container__languages :nth-child(2)::before {
-    animation-name: ushztf4;
+    animation-name: usi1fqx;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes ushztf4 {
+  @keyframes usi1fqx {
     0% {
       width: 0px;
     }
     100% {
-      width: 52%;
+      width: 54%;
     }
   }
   .language-container__languages :nth-child(3)::before {
-    animation-name: ushztfs;
+    animation-name: usi1frk;
     animation-duration: 2.2s;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
-  @keyframes ushztfs {
+  @keyframes usi1frk {
     0% {
       width: 0px;
     }
     100% {
-      width: 67%;
+      width: 62%;
     }
   }
   .language-container__languages .progress-bars-container {
@@ -11446,12 +11446,12 @@ h2 {
   margin-left: 2rem;
 }
 .contact-container__content-group:hover i {
-  animation-name: ushztgf;
+  animation-name: usi1frn;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes ushztgf {
+@keyframes usi1frn {
   0% {
     transform: rotate(0deg);
   }
@@ -11526,12 +11526,12 @@ h2 {
   border-bottom-color: #BE2E73;
   z-index: 2;
   animation-iteration-count: infinite !important;
-  animation-name: ushztgi;
+  animation-name: usi1fsi;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes ushztgi {
+@keyframes usi1fsi {
   0% {
     transform: rotate(0deg);
   }
@@ -11652,12 +11652,12 @@ h2 {
   animation-iteration-count: infinite;
 }
 .scroll-container :nth-child(1) {
-  animation-name: ushztgx;
+  animation-name: usi1fsq;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
-@keyframes ushztgx {
+@keyframes usi1fsq {
   0% {
     transform: translateY(30px) rotate(45deg);
     opacity: 1;
@@ -11668,12 +11668,12 @@ h2 {
   }
 }
 .scroll-container :nth-child(2) {
-  animation-name: ushzth0;
+  animation-name: usi1fsw;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-delay: 150ms;
 }
-@keyframes ushzth0 {
+@keyframes usi1fsw {
   0% {
     transform: translateY(17px) rotate(45deg);
     opacity: 1;
